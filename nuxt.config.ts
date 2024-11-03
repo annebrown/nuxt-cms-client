@@ -3,13 +3,12 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
   
     modules: [
+        '@nuxt/ui',
         '@nuxt/content', 
         '@nuxt/image', 
         '@nuxtjs/mdc', 
-        '@nuxt/ui',
         '@nuxtjs/tailwindcss', 
         '@nuxtjs/color-mode',
-  
     ],
 
     srcDir: 'src/',
@@ -39,15 +38,6 @@ export default defineNuxtConfig({
       },
     compatibilityDate: '2024-09-28',
 
-    colorMode: {
-        preference: 'dark', // default value of $colorMode.preference
-    },
-    components: true,
-    runtimeConfig: {
-        public: {
-          // Add runtime env vars here
-        },
-      },  
   })
   
 
