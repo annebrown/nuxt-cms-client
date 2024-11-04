@@ -9,23 +9,34 @@ export default defineNuxtConfig({
         '@nuxtjs/mdc', 
         '@nuxtjs/tailwindcss', 
         '@nuxtjs/color-mode',
+        '@nuxtjs/google-fonts'
     ],
-
+    colorMode: {
+        classSuffix: '',
+        preference: 'dark',
+    },
     srcDir: 'src/',
 
     content: {
         documentDriven: true,
         // Ignore "Number Dot" ordering in /content
         ignores: ['^\\.', '^-', '^[0-5]\\d*\\.'],
+        highlight: {
+            // Themes on:
+            // github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
+            theme: {
+                dark: 'github-dark',
+                default: 'github-dark'
+            }
+        },
 
         sources: {
             github: {
               prefix: '/docs', // Prefix for routes used to query contents
-              driver: 'github', // Driver used to fetch contents (view unstorage documentation)
+              driver: 'github', // 
               repo: "annebrown/content-base",
               branch: "main",
-              dir: "content", // Directory where contents are located. It could be a subdirectory of the repository.
-              // Imagine you have a blog inside your content folder. You can set this option to `content/blog` with the prefix option to `/blog` to avoid conflicts with local files.
+              dir: "content", 
             },
         }
       
@@ -37,7 +48,13 @@ export default defineNuxtConfig({
         },
       },
     compatibilityDate: '2024-09-28',
-
+   css: ['@/assets/styles/fleet.css'],
+   googleFonts: {
+    download: true,
+    families: {
+      Roboto: true,
+    }
+  }
   })
   
 

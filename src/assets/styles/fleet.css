@@ -1,0 +1,122 @@
+/******************************************************************************/
+/*
+/* File: @/assets/styles/fleet.css
+/* 
+/* - Tailwind Colors: See: @data/colors.txt
+/* - Tailwind Defaults       
+/* - Variables
+/* - Colors
+/* - Text font, size and layout
+/* - Debug
+/*
+/******************************************************************************/
+
+/******************************************************************************/
+/*
+/* Tailwind Defaults
+/*
+/******************************************************************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/******************************************************************************/
+/*
+/* Variables
+/*
+/******************************************************************************/
+@layer base {
+    :root {
+        --primary-light: #67e8f9; /* cyan-300 */
+        --primary-dark: #67e8f9; /* cyan-300 */
+        --accent-light: #67e8f9; /* cyan-300 */
+        --accent-dark: #67e8f9; /* cyan-300 */
+        --text-light: #0f172a; /* gray-900 */ 
+        --text-dark: #e2e8f0; /* gray-200 */
+        --text-dimmed-light: #64748b; /* gray-500 */ 
+        --text-dimmed-dark: #64748b; /* gray-500 */ 
+        --title-light: #155e75; /* cyan-800 */
+        --title-dark: #67e8f9; /* cyan-300 */
+        --heading-light: #155e75; /* cyan-800 */
+        --heading-dark: #0891b2; /* cyan-400 */
+        --link-light: #075985; /* sky-800 */
+        --link-dark: #bef264; /* lime-300 */ 
+
+        --body-light: #cbd5e1; /* gray-300 */; 
+        --body-dark:#020617; /* gray-950 */
+
+        --main-ring-light:  #4d7c0f; /* lime-700 */ 
+        --main-ring-dark: #bef264; /* lime-300 */
+
+        --bow-text-light: #4d7c0f; /* green-700 */
+        --bow-text-dark: #bef264; /* lime-300 */ 
+        --navi-ring-light: #64748b; /* gray-500 */
+        --navi-ring-dark: #bef264; /* lime-300 */ 
+        --navi-bg-light: black;  
+        --navi-bg-dark: black;
+
+        --debug-text-light: #f97316; /* orange-500 */
+        --debug-text-dark: #f97316; /* orange-500 */
+    }
+}
+
+/******************************************************************************/
+/*
+/* Colors
+/*
+/******************************************************************************/
+/* Text */
+p { @apply text-[--text-light] dark:text-[--text-dark]; }
+p.dimmed { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
+h1, title { @apply text-[--title-light] dark:text-[--title-dark]; }
+h2, h2, h4 { @apply text-[--heading-light] dark:text-[--heading-dark]; }
+
+/* Text Links */
+a { @apply text-[--link-light] dark:text-[--link-dark]; }
+a:hover, a:active, a:focus { @apply text-current dark:text-current font-bold; } 
+
+/* Icon Links */
+svg.stroke a { @apply stroke-[--link-light] dark:stroke-[--link-dark]; }
+svg.stroke:hover a, svg.stroke:active a, svg.stroke:focus a { 
+    @apply stroke-[--link-light] dark:stroke-[--link-dark] stroke-2; }
+svg.fill a { @apply fill-[--link-light] dark:fill-[--link-dark]; }
+svg.fill:hover a, svg.fill:active a, svg.fill:focus a { 
+    @apply fill-[--link-light] dark:fill-[--link-dark]; }
+
+body { @apply bg-[--body-light] dark:bg-[--body-dark]; }
+p#bow { @apply text-[--bow-text-light] dark:text-[--bow-text-dark]; }
+div#main { @apply ring-[--main-ring-light] dark:ring-[--main-ring-dark]; }
+#transom { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
+
+mode-icon svg { @apply 
+    stroke-[--primary] dark:stroke-[--primary-dark] fill-none ; }
+
+.social-icon svg { @apply fill-[--primary] stroke-none m-0 p-0; }
+
+.mode-icon svg:hover { @apply stroke-current fill-none m-0 p-0; }
+.social-icon svg:hover { @apply fill-current stroke-none m-0 p-0; }
+/******************************************************************************/
+/*
+/* Text Font, Size and Layout
+/*
+/******************************************************************************/
+h1 { @apply text-center text-2xl font-bold pb-5; }
+h2 { @apply text-left text-xl font-bold pb-4; }
+h3 { @apply text-left text-lg font-bold pb-4; }
+h4 { @apply text-left text-lg pb-3; }
+p  { @apply text-sm pb-3; }
+#bow { @apply text-sm; }
+#transom { @apply text-xs; }
+/******************************************************************************/
+/*
+/* Debug
+/*
+/******************************************************************************/
+#debug { @apply text-[--debug-light] dark:text-[debut-dark]; }
+div#debug { @apply max-w-60; }
+.debug-area { @apply max-w-fit mx-auto p-2 py-0 pb-0 mt-4 mb-0 
+    border-2 rounded-lg border-teal-400 ; }
+.debug-h3 { @apply             text-center; }
+.debug-h4 { @apply  text-xs    text-left text-teal-300; }
+.debug-p { @apply   text-xs     text-left text-white pb-1; }
+.debug-accent { @apply text-teal-300;} 
+.debug-area hr { @apply border-teal-300 h-2 w-full;}
