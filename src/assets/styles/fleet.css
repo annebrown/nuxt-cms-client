@@ -26,14 +26,14 @@
 /******************************************************************************/
 @layer base {
     :root {
-        --primary-light: #67e8f9; /* cyan-300 */
-        --primary-dark: #67e8f9; /* cyan-300 */
+
+
         --accent-light: #67e8f9; /* cyan-300 */
         --accent-dark: #67e8f9; /* cyan-300 */
-        --text-light: #0f172a; /* gray-900 */ 
-        --text-dark: #e2e8f0; /* gray-200 */
-        --text-dimmed-light: #64748b; /* gray-500 */ 
-        --text-dimmed-dark: #64748b; /* gray-500 */ 
+        --text-light: #0f172a; /* slate-900 */  
+        --text-dark: #e2e8f0; /* slate-200 */
+        --text-dimmed-light: #64748b; /* slate-500 */
+        --text-dimmed-dark: #64748b; /* slate-500 */ 
         --title-light: #155e75; /* cyan-800 */
         --title-dark: #67e8f9; /* cyan-300 */
         --heading-light: #155e75; /* cyan-800 */
@@ -41,15 +41,15 @@
         --link-light: #075985; /* sky-800 */
         --link-dark: #bef264; /* lime-300 */ 
 
-        --body-light: #cbd5e1; /* gray-300 */; 
-        --body-dark:#020617; /* gray-950 */
+        --body-light: #cbd5e1; /* slate-300 */
+        --body-dark:#020617; /* slate-950 */ 
 
         --main-ring-light:  #4d7c0f; /* lime-700 */ 
         --main-ring-dark: #bef264; /* lime-300 */
 
         --bow-text-light: #4d7c0f; /* green-700 */
         --bow-text-dark: #bef264; /* lime-300 */ 
-        --navi-ring-light: #64748b; /* gray-500 */
+        --navi-ring-light: #64748b; /* slate-500 */
         --navi-ring-dark: #bef264; /* lime-300 */ 
         --navi-bg-light: black;  
         --navi-bg-dark: black;

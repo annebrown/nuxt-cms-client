@@ -40,7 +40,7 @@ function toggleDebugFrontPage() {
            <ShipSocialIcons class="mr-2 mt-1  social-icon inline-block align-top mt-0.75" />
            <UiColorModeSwitch class="inline-block align-base " />
         </span>
-        <DebugFrontPage id="front-page" /><!-- Debug/Test/Prototype -->
+        <DebugFrontPage /><!-- Debug/Test/Prototype -->
     </div> 
 
 </div></template

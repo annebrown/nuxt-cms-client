@@ -209,17 +209,17 @@ COLORS
 #082f49; /* sky-950 */ 
 
 -------- slate --------
-; /* slate-50 */ 
-; /* slate-100 */ 
-; /* slate-200 */ 
-; /* slate-300 */ 
-; /* slate-400 */ 
-; /* slate-500 */ 
-; /* slate-600 */ 
-; /* slate-700 */ 
-; /* slate-800 */ 
-; /* slate-900 */ 
-; /* slate-950 */ 
+#f8fafc; /* slate-50 */ 
+#f1f5f9; /* slate-100 */ 
+#e2e8f0; /* slate-200 */ 
+#cbd5e1; /* slate-300 */ 
+#94a3b8; /* slate-400 */ 
+#64748b; /* slate-500 */ 
+#475569; /* slate-600 */ 
+#334155; /* slate-700 */ 
+#1e293b; /* slate-800 */ 
+#0f172a; /* slate-900 */ 
+#020617; /* slate-950 */ 
 
 -------- stone --------
 ; /* stone-50 */ 

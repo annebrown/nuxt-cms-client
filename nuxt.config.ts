@@ -9,7 +9,8 @@ export default defineNuxtConfig({
         '@nuxtjs/mdc', 
         '@nuxtjs/tailwindcss', 
         '@nuxtjs/color-mode',
-        '@nuxtjs/google-fonts'
+        '@nuxtjs/google-fonts',
+        '@nuxt/icon',
     ],
     colorMode: {
         classSuffix: '',
@@ -21,14 +22,14 @@ export default defineNuxtConfig({
         documentDriven: true,
         // Ignore "Number Dot" ordering in /content
         ignores: ['^\\.', '^-', '^[0-5]\\d*\\.'],
+        
         highlight: {
-            // Themes on:
-            // github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
             theme: {
-                dark: 'github-dark',
-                default: 'github-dark'
+              default: 'github-light',
+              dark: 'github-dark',
             }
         },
+        
 
         sources: {
             github: {
@@ -41,15 +42,16 @@ export default defineNuxtConfig({
         }
       
     },
-      nitro: {
+    nitro: {
         prerender: {
-          crawlLinks: true,
-          failOnError: false,
+            crawlLinks: true,
+            failOnError: false,
         },
-      },
+    },
     compatibilityDate: '2024-09-28',
-   css: ['@/assets/styles/fleet.css'],
-   googleFonts: {
+    
+    css: ['@/assets/styles/fleet.css'],
+    googleFonts: {
     download: true,
     families: {
       Roboto: true,
