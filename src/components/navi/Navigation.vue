@@ -42,7 +42,7 @@ const filteredNavigation = computed(() => filterDuplicateRoutes(organizedNavigat
 <template>
   <nav>
     <ul class="navigation-tree">
-      <NaviNavigationTree
+      <NaviNavigationItem
         v-for="item in filteredNavigation"
         :key="item._path"
         :item="item"

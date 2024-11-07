@@ -19,12 +19,12 @@ const isDirectory = computed(() => props.item.children && props.item.children.le
   <li :style="{ paddingLeft: `${depth * 5}px` }">
     <div class="nav-item" :class="{ 'nav-directory': isDirectory }">
       <button v-if="isDirectory" @click="toggleExpand" class="expand-button">
-        {{ isExpanded ? '▼' : '▶' }}
+        {{ isExpanded ? '-' : '+' }}
       </button>
       <NuxtLink :to="item._path">{{ item.title }}</NuxtLink>
     </div>
     <ul v-if="isDirectory && isExpanded">
-      <NavigationItem
+      <NaviNavigationItem
         v-for="child in item.children"
         :key="child._path"
         :item="child"

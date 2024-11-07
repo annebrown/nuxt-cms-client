@@ -1,12 +1,28 @@
-# browndomain.com
+# content-app
 
 ## Description
 
-Source for apex domain website
+Prototype App for remote, headless source (GitHub: annebrown/content-base)
 
-## Repo
+## Repos
 
-[bd.c](https://github.com/annebrown/bd.c.git)
+Prototype: [content-app](https://github.com/annebrown/content-app)
+
+Deployment Target: [ab.ca](https://github.com/annebrown/ab.ca) and [bd.com](https://github.com/annebrown/bd.com)
+
+
+
+Headless Source:[content-base](https://github.com/annebrown/content-base)
+
+See also, content app proto: [ab.ca](http://annebrown.ca)
+
+## Deployments
+
+App Prototype: [content-app.annebrown.ca](https://content-app.annebrown.ca)
+
+[annebrown.ca](https://annebrown.ca)
+
+[browndomain.com](https://browndomain.com)
 
 ## Dev
 

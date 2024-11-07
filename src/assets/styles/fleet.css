@@ -42,7 +42,7 @@
         --link-dark: #bef264; /* lime-300 */ 
 
         --body-light: #cbd5e1; /* slate-300 */
-        --body-dark:#020617; /* slate-950 */ 
+        --body-dark: #020617; /* gray-950 */
 
         --main-ring-light:  #4d7c0f; /* lime-700 */ 
         --main-ring-dark: #bef264; /* lime-300 */
@@ -81,19 +81,19 @@ svg.stroke:hover a, svg.stroke:active a, svg.stroke:focus a {
 svg.fill a { @apply fill-[--link-light] dark:fill-[--link-dark]; }
 svg.fill:hover a, svg.fill:active a, svg.fill:focus a { 
     @apply fill-[--link-light] dark:fill-[--link-dark]; }
-
+mode-icon svg { @apply stroke-[--primary] dark:stroke-[--primary-dark] 
+    fill-none ; }
+.social-icon    svg         { @apply fill-[--primary] stroke-none m-0 p-0; }
+.mode-icon      svg:hover   { @apply stroke-current fill-none m-0 p-0; }
+.social-icon    svg:hover   { @apply fill-current stroke-none m-0 p-0; }
+/* Containers */
 body { @apply bg-[--body-light] dark:bg-[--body-dark]; }
 p#bow { @apply text-[--bow-text-light] dark:text-[--bow-text-dark]; }
-div#main { @apply ring-[--main-ring-light] dark:ring-[--main-ring-dark]; }
 #transom { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
-
-mode-icon svg { @apply 
-    stroke-[--primary] dark:stroke-[--primary-dark] fill-none ; }
-
-.social-icon svg { @apply fill-[--primary] stroke-none m-0 p-0; }
-
-.mode-icon svg:hover { @apply stroke-current fill-none m-0 p-0; }
-.social-icon svg:hover { @apply fill-current stroke-none m-0 p-0; }
+/* Code Blocks */
+pre {
+    @apply bg-black rounded-lg p-2 text-xs;
+  }
 /******************************************************************************/
 /*
 /* Text Font, Size and Layout
@@ -111,7 +111,7 @@ p  { @apply text-sm pb-3; }
 /* Debug
 /*
 /******************************************************************************/
-#debug { @apply text-[--debug-light] dark:text-[debut-dark]; }
+/* #debug { @apply text-[--debug-light] dark:text-[debug-dark]; }
 div#debug { @apply max-w-60; }
 .debug-area { @apply max-w-fit mx-auto p-2 py-0 pb-0 mt-4 mb-0 
     border-2 rounded-lg border-teal-400 ; }
@@ -119,4 +119,4 @@ div#debug { @apply max-w-60; }
 .debug-h4 { @apply  text-xs    text-left text-teal-300; }
 .debug-p { @apply   text-xs     text-left text-white pb-1; }
 .debug-accent { @apply text-teal-300;} 
-.debug-area hr { @apply border-teal-300 h-2 w-full;}
+.debug-area hr { @apply border-teal-300 h-2 w-full;} */

@@ -3,71 +3,46 @@ const colorMode = useColorMode();
 colorMode.preference = 'dark';
 </script>
 
-<template><div>
-    
-<div class="max-w-fit min-w-96 h-fit mx-auto"><!-- Center -->
-    <div class="grid grid-flow-col grid-col-3 gap-0">
-        <div id="main"><!-- main -->
-            <NuxtRouteAnnouncer /> <!-- Assistive Technologies -->
-            <ShipBow id="bow" />
-            <div id="midships"> 
-                <div id="hold">
-                    <!-- Title -->
-                    <ContentDoc v-slot="{ doc }">
-                        <h1 id="title" class="content-title">
-                            <slot name="title">
-                                {{ doc.title }}
-                            </slot>
-                        </h1> 
-                    </ContentDoc>
+<template><div><!-- SPA -->
 
-                    <ContentDoc v-slot="{ doc }">
-                        <div class="content-cargo">
-                            <h2>Description</h2>
-                            <p>
-                                <slot name="title">
-                                    {{ doc.description }}
-                                </slot>
-                            </p>
-                        
-                            <div class="">
-                                <ContentRenderer :value="doc" />
-                            </div>
-                        </div><!-- ShipCargo-->
+ <NuxtRouteAnnouncer /><!-- Assistive Technologies -->   
 
-                    </ContentDoc>
-                   
-                </div> 
-            </div>
-            <ShipTransom id="transom" />
-        </div><!-- Main -->
+<!-- Center Everything -->
+<div class="relative min-w-96 h-fit w-fit mx-auto pt-[1rem] pb-[2rem]">
+    <div class=" mx-auto">
+        <div class=" h-fit mx-auto">
+            
+        
+            
+            <!-- Grid -->
+            <div class="grid grid-col-3 grid-flow-col m-0 p-0">
+                <div id="sidebar" class="w-fit h-fit mt-[20px] -mr-[14px]">
+                    <NaviNavigation class="w-fit pr-2" />
+                </div>
 
-      <!--   <div id="sidebar"> -->
-      <!--       <Sidebar /> -->
-      <!--   </div>  -->
-         
-        <div id="navi">
-            <NaviOne />
-        </div> 
-    </div><!-- Grid -->
-</div>
+                <div class="">
+                    <ShipHold />
+                </div>
 
-</div></template>
+                
+            </div><!-- Grid -->
+        </div>
+    </div>
+</div><!-- Center Everything -->
+
+</div></template><!-- SPA -->
 
 <style>
 body { @apply mx-auto p-1 sm:p-5 md:p-8; }
-div#main { @apply 
-    m-1 sm:m-2 md:m-5 lg:m-8 pt-1
-    border-2 rounded-lg; }
-div#navi { @apply mt-5 -ml-5 p-1 
-    border-2 rounded-lg drop-shadow-md; }
-div#content-sidebar { @apply 
-    border-2 rounded-lg drop-shadow-lg
-    bg-[--body-light] dark:bg-[--body-dark]; }
-#bow { @apply w-full h-[3rem] m-0 p-0; }
-#hold { @apply m-0 mb-4 mr-4 ml-4; }
-#midships { @apply w-full m-0 p-0; }
-#transom { @apply mx-auto p-0 mt-2 px-4; }
-
-#navi, #sidebar { @apply bg-[--body-light] dark:bg-[--body-dark]; }
+/* div#main { @apply ; } */
+/* div#navi { @apply ; } */
+/* div#sidebar { @apply ; } */
+/* #bow { @apply ; } */
+/* #hold { @apply ; } */
+/* #midships { @apply ; } */
+/* #transom { @apply ; } */
+#bow { @apply dark:bg-black rounded-lg ring-2 ring-lime-300; }
+#navi, #sidebar { @apply p-1
+    bg-[--body-light] dark:bg-[--body-dark]
+    ring-2 ring-[--main-ring-light] dark:ring-[--main-ring-dark] rounded-lg; }
 </style>

@@ -1,11 +1,12 @@
 <script lang="ts" setup>
 function toggleDebugFrontPage() {
-  var toggle = document.getElementById('front-page');
-  if (toggle.style.visibility === 'hidden') {
-    toggle.style.visibility = 'visible';
-  } else {
-    toggle.style.visibility = 'hidden';
-  }
+    var toggle = undefined;
+    var toggle = document.getElementById('front-page');
+
+    if (toggle.style.visibility === 'hidden') 
+        { toggle.style.visibility = 'visible'; } 
+    else    
+        { toggle.style.visibility = 'hidden'; }
 }
 </script>
 
@@ -37,7 +38,7 @@ function toggleDebugFrontPage() {
        
          <!-- GitHub & Color Mode Toggle -->
         <span class="inline-block h-9 align-top self-center w-fit">
-           <ShipSocialIcons class="mr-2 mt-1  social-icon inline-block align-top mt-0.75" />
+           <ImgSocialIcons class="mr-2 mt-1  social-icon inline-block align-top mt-0.75" />
            <UiColorModeSwitch class="inline-block align-base " />
         </span>
         <DebugFrontPage /><!-- Debug/Test/Prototype -->
