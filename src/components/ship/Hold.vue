@@ -1,4 +1,4 @@
-<template><div>
+<template>
 <!-- Relative for Abs -->
 <div id="the-relative" class=" relative ring-2 ring-lime-300 rounded-lg p-2 m-2">
 
@@ -31,4 +31,4 @@
 
 <ShipTransom id="transom" class="absolute bottom-0 mx-auto w-fit p-2 m-0" />
 </div><!-- Relative for Abs Positioning-->
-</div></template>
+</template>
