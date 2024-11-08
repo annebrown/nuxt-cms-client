@@ -1,5 +1,5 @@
 ---
-title: browndomain.com
+title: Home
 description: Development Website
 ---
 

@@ -1,47 +1,28 @@
-<script lang="ts" setup>
-function toggleDebugFrontPage() {
-    var toggle = undefined;
-    var toggle = document.getElementById('front-page');
-
-    if (toggle.style.visibility === 'hidden') 
-        { toggle.style.visibility = 'visible'; } 
-    else    
-        { toggle.style.visibility = 'hidden'; }
-}
-</script>
-
 <template><div>
 
-    <div class="transom flex justify-between h-8 mb-0 pb-0">
+    <p id="transom" class="flex justify-between h-8">
+
         <!-- Copyright -->
-        <span id="copy" class="pt-0 mt-0 mb-0 pb-0 text-bottom">
-            Copyright  
-          
-                <span class="invisible-link">
-                    <button onclick="toggleDebugFrontPage()"
-                        class="text-[--text-dimmed-light]
-                        dark:text-[--text-dimmed-dark]
-                        cursor-text"
-                    >
-                        @
-                    </button>
-                </span> 2024  
-            <NuxtLink href='/' 
-                class="text-green-700 dark:text-cyan-700 cursor-text"
-            >
-                Anne Brown
-            </NuxtLink>
+        <span id="copy" class="mt-1 p-0">
+            Copyright 
+            <NuxtLink href="/docs/tech/frameworks/nuxt/env-vars" 
+                class="
+                    text-[--text-dimmed-light] 
+                    dark:text-[--text-dimmed-dark]
+                    cursor-text
+            ">
+                @
+            </NuxtLink> 2024  <NuxtLink href='/'>Anne Brown</NuxtLink>
         </span>
 
          <!-- Center of Transom -->
         <span class=""><!-- spacer --></span>
        
          <!-- GitHub & Color Mode Toggle -->
-        <span class="inline-block h-9 align-top self-center w-fit">
-           <ImgSocialIcons class="mr-2 mt-1  social-icon inline-block align-top mt-0.75" />
-           <UiColorModeSwitch class="inline-block align-base " />
+        <span class="inline-block m-0 mt-2 p-0 h-9 align-top self-center">
+           <ImgSocialIcons class="social-icon inline-block align-bottom m-0 mb-2 p-0 mr-1" />
+           <UiColorModeSwitch class="mode-icon inline-block align-top m-0 p-0" />
         </span>
-        <DebugFrontPage /><!-- Debug/Test/Prototype -->
-    </div> 
+    </p>   
 
-</div></template
+</div></template>
