@@ -11,6 +11,7 @@ export default defineNuxtConfig({
         '@nuxtjs/color-mode',
         '@nuxtjs/google-fonts',
         '@nuxt/icon',
+        '@vueuse/nuxt'
     ],
     colorMode: {
         classSuffix: '',
@@ -31,7 +32,6 @@ export default defineNuxtConfig({
             langs: ['regexp', 'json', 'js', 'ts', 'tsx', 'html', 'css', 'vue','shell' , 'mdc', 'yaml', 'md' ],
         },
         
-
         sources: {
             github: {
               prefix: '/docs', // Prefix for routes used to query contents
@@ -53,11 +53,11 @@ export default defineNuxtConfig({
     
     css: ['@/assets/styles/fleet.css'],
     googleFonts: {
-    download: true,
-    families: {
-      Roboto: true,
-    }
-  }
+        download: true,
+        families: {
+        Roboto: true,
+        }
+    },
   })
   
 

@@ -11,6 +11,7 @@
     <template #title>
         annebrown.ca
     </template>
+    <NuxtImg href="logo-1140x512.svg" />
     <p>Development WebSite</p>
 </NuxtLayout>
         

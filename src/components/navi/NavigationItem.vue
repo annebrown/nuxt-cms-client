@@ -23,7 +23,7 @@ const isDirectory = computed(() => props.item.children && props.item.children.le
       </button>
       <NuxtLink :to="item._path">{{ item.title }}</NuxtLink>
     </div>
-    <ul v-if="isDirectory && isExpanded">
+    <ul v-if="isDirectory && isExpanded" class="text-xs">
       <NaviNavigationItem
         v-for="child in item.children"
         :key="child._path"
@@ -39,9 +39,6 @@ const isDirectory = computed(() => props.item.children && props.item.children.le
   display: flex;
   align-items: center;
   padding: 5px 0;
-}
-.nav-directory {
-  font-weight: bold;
 }
 .expand-button {
   background: none;

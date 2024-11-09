@@ -12,7 +12,7 @@
     <div id="midships"><!-- Midships -->
 
         <!-- Title -->
-        <ContentDoc v-slot="{ doc }">
+        <ContentDoc v-slot="{ doc }" class="prose" >
             <h1 id="title" class="content-title">
                 <slot name="title">{{ doc.title }}</slot>
             </h1> 

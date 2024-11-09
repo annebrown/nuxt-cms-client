@@ -1,5 +1,5 @@
 <template>
-<div class="relative p-2">
+<div class="page relative p-2">
 
     <ContentDoc v-slot='{ doc }' class="float-left">
         <h1 id='title' class='title pb-3'>

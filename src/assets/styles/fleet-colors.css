@@ -23,26 +23,32 @@
 /******************************************************************************/
 @layer base {
     :root {
-        --accent-light: #67e8f9; /* cyan-300 */
-        --accent-dark: #67e8f9; /* cyan-300 */
-        --text-light: #0f172a; /* slate-900 */  
-        --text-dark: #e2e8f0; /* slate-200 */
+        --accent-light: #0ea5e9; /* sky-500 */ 
+        --accent-dark: #0ea5e9; /* sky-500 */ 
+
+        --text-light: black; 
+        --text-dark: white;
         --text-dimmed-light: #64748b; /* slate-500 */
         --text-dimmed-dark: #64748b; /* slate-500 */ 
 
-        --title-light: #fca5a5; /* red-300 */ 
-        --title-dark: #fca5a5; /* red-300 */  
-
+        --title-light: #075985; /* sky-800 */
+        --title-dark: #84cc16; /* green-500 */ 
         --heading-light: #155e75; /* cyan-800 */
-        --heading-dark: #0891b2; /* cyan-400 */
-        --link-light: #155e75; /* cyan-800 */
-        --link-dark: #67e8f9; /* cyan-300 */
+        --heading-dark: #f97316; /* orange-500 */
+
+        --link-light: #0ea5e9; /* sky-500 */ 
+        --link-dark: #0ea5e9; /* sky-500 */ 
 
         --body-light: #cbd5e1; /* slate-300 */
-        --body-dark: #020617; /* gray-950 */ 
+        --body-dark: #020617; /* gray-950 */
+
+        --midships-light: white;
+        --midships-dark: #0f172a; /* gray-900 */
+        --midships-ring-light: white;
+        --midships-ring-dark: #020617; /* gray-950 */
 
         --main-ring-light:  #4d7c0f; /* lime-700 */ 
-        --main-ring-dark: #bef264; /* lime-300 */
+        --main-ring-dark: #020617; /* gray-950 */ 
 
         --bow-text-light: #4d7c0f; /* green-700 */
         --bow-text-dark: #bef264; /* lime-300 */ 
@@ -62,24 +68,30 @@
 /*
 /******************************************************************************/
 body { @apply bg-[--body-light] dark:bg-[--body-dark]; }
-#midships, #navi, #sidebar { @apply
+#midships { @apply bg-[--midships-light] dark:bg-[--midships-dark]
+    ring-2 ring-[--midships-ring-light] dark:ring-[--midships-ring-dark] rounded-lg; }
+#navi, #sidebar { @apply
     bg-[--body-light] dark:bg-[--body-dark]
-    ring-2 ring-[--main-ring-light] dark:ring-[--main-ring-dark] rounded-lg; }
+    rounded-lg; }
+/* #navi, #sidebar { @apply
+    bg-[--body-light] dark:bg-[--body-dark]
+    ring-2 ring-[--main-ring-light] dark:ring-[--main-ring-dark] rounded-lg; }*/
 
 /******************************************************************************/
 /*
 /* Code Blocks
 /*
 /******************************************************************************/
-pre {
-    @apply bg-black rounded-lg p-2 text-xs;
-  }
+.nuxt-content pre code { @apply text-xs; }
+pre { @apply bg-gray-800 rounded-lg p-2 text-xs; }
  /******************************************************************************/
 /*
 /* Text 
 /*
 /******************************************************************************/
 p { @apply text-[--text-light] dark:text-[--text-dark]; }
+p#navi { @apply text-xs; }
+p#navi a { @apply  text-sky-500 dark:text-sky-500; }
 p#bow { @apply text-[--bow-text-light] dark:text-[--bow-text-dark]; }
 p#transom { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
 p.dimmed { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
