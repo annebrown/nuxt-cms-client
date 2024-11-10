@@ -1,8 +1,12 @@
 ---
-title: Home
-description: Development Website
+title: Content App
+description: Template App for Docs Project
 ---
 
 ## Purpose
 
-For capture, storage, and access to development data
+Starter for @Nuxt/Content, Markdown SSG App
+
+## Deployments
+
+[Vercel](https://content-app.annebrown.ca)

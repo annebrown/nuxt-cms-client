@@ -26,15 +26,12 @@ watch([x, y], () => {
 <div><!-- Logo and Logo Text -->
 
     <!-- Logo Img -->
-    <ImgLogo class="
-        circle-icon inline-block h-10 w-10 p-1" 
-        :class="{ 'shake': isShaking }"
-    />
+    <ImgLogo class="inline-block h-10 w-10 p-1" />
             
     <!-- Logo Text -->  
         <div class='inline-block align-top mt-2 mr-2 ml-1'>
     <NuxtLink href='/'>
-        <span class="text-sky-500"> Miss Communication</span>
+        <span class="text-sky-500">content-app.annebrown.ca</span>
     </NuxtLink>
 </div>
 </div><!-- Logo -->
