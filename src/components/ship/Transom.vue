@@ -1,28 +1,28 @@
 <template><div>
 
-    <p id="transom" class="flex justify-between h-8">
+<p id="transom" class="flex justify-between h-8">
 
-        <!-- Copyright -->
-        <span id="copy" class="mt-1 p-0">
-            Copyright 
-            <NuxtLink href="/docs/tech/frameworks/nuxt/env-vars" 
-                class="
-                    text-[--text-dimmed-light] 
-                    dark:text-[--text-dimmed-dark]
-                    cursor-text
-            ">
-                @
-            </NuxtLink> 2024  <NuxtLink href='/'>Anne Brown</NuxtLink>
-        </span>
+<!-- Copyright -->
+<span id="copy" class="mt-1 p-0">
+    Copyright 
+    <NuxtLink href="/docs/tech/frameworks/nuxt/env-vars" 
+        class="
+            text-[--text-dimmed-light] 
+            dark:text-[--text-dimmed-dark]
+            cursor-text
+    ">
+        @
+    </NuxtLink> 2024  <NuxtLink href='/'>Anne Brown</NuxtLink>
+</span>
 
-         <!-- Center of Transom -->
-        <span class=""><!-- spacer --></span>
-       
-         <!-- GitHub & Color Mode Toggle -->
-        <span class="inline-block m-0 mt-2 p-0 h-9 align-top self-center">
-           <ImgSocialIcons class="social-icon inline-block align-bottom m-0 mb-2 p-0 mr-1" />
-           <UiColorModeSwitch class="mode-icon inline-block align-top m-0 p-0" />
-        </span>
-    </p>   
+ <!-- Center of Transom -->
+<span class=""><!-- spacer --></span>
+
+ <!-- GitHub & Color Mode Toggle -->
+<span class="inline-block m-0 p-0 pt-2 h-9 align-bottom self-center">
+   <ImgSocialIcons class="social-icon inline-block align-bottom m-0 p-0 mr-1 mb-0.5" />
+   <ImgColorModeSwitch class="mode-switch inline-block align-bottom m-0 p-0" />
+</span>
+</p>   
 
 </div></template>

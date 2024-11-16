@@ -76,14 +76,6 @@ body { @apply bg-[--body-light] dark:bg-[--body-dark]; }
 /* #navi, #sidebar { @apply
     bg-[--body-light] dark:bg-[--body-dark]
     ring-2 ring-[--main-ring-light] dark:ring-[--main-ring-dark] rounded-lg; }*/
-
-/******************************************************************************/
-/*
-/* Code Blocks
-/*
-/******************************************************************************/
-.nuxt-content pre code { @apply text-xs; }
-pre { @apply bg-gray-800 rounded-lg p-2 text-xs; }
  /******************************************************************************/
 /*
 /* Text 
@@ -113,17 +105,5 @@ a:hover, a:active, a:focus { @apply text-current dark:text-current font-bold; }
 /* Icon Links 
 /*
 /******************************************************************************/
-svg.stroke a { @apply stroke-[--link-light] dark:stroke-[--link-dark]; }
-svg.stroke:hover a, svg.stroke:active a, svg.stroke:focus a { 
-    @apply stroke-[--link-light] dark:stroke-[--link-dark] stroke-2; }
-svg.fill a { @apply fill-[--link-light] dark:fill-[--link-dark]; }
-svg.fill:hover a, svg.fill:active a, svg.fill:focus a { 
-    @apply fill-[--link-light] dark:fill-[--link-dark]; }
-mode-icon       svg { @apply stroke-[--main-ring-light] dark:stroke-[--main-ring-dark] 
-    fill-none ; }
-.social-icon    svg         { @apply fill-[--accent-light] dark:fill-[--accent-dark] stroke-none m-0 p-0; }
-.mode-icon      svg:hover   { @apply stroke-current fill-none m-0 p-0; }
-.social-icon    svg:hover   { @apply fill-current stroke-none m-0 p-0; }
-
-
-
+svg { @apply stroke-[--link-light] dark:stroke-[--link-dark] stroke-2; }
+svg:hover, svg:active, svg:focus { @apply stroke-current dark:stroke-current stroke-2; } 
