@@ -31,7 +31,7 @@ watch([x, y], () => {
     <!-- Logo Text -->  
         <div class='inline-block align-top mt-2 mr-2 ml-1'>
     <NuxtLink href='/'>
-        <span class="text-sky-500">content-app.annebrown.ca</span>
+        <span class="text-sky-500">docs.annebrown.ca</span>
     </NuxtLink>
 </div>
 </div><!-- Logo -->
