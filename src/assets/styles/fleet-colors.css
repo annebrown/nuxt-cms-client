@@ -97,6 +97,10 @@ p#transom { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
 p.dimmed { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
 h1, title { @apply text-[--title-light] dark:text-[--title-dark]; }
 h2, h2, h4 { @apply text-[--heading-light] dark:text-[--heading-dark]; }
+.shiki { @apply text-xs text-wrap; }
+pre, pre code {
+    @apply bg-gray-200 dark:bg-gray-900 rounded-lg px-3 text-xs mb-8;
+}
 /******************************************************************************/
 /*
 /* Text Links 
