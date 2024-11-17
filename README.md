@@ -36,3 +36,7 @@ pnpm dev
 ## Stack
 
 [Nuxt](https://nuxt.com/)
+
+## TODO
+
+Remove authn barnacles

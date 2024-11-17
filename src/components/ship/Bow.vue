@@ -1,11 +1,6 @@
 <script setup lang="ts">
 
 import { useMouse } from '@vueuse/core'
-
-const onMouseMove = () => {
-  console.log(`Mouse moved to: x: ${x.value}, y: ${y.value}`)
-}
-
 import { ref, watch } from 'vue'
 
 const { x, y } = useMouse()
@@ -22,7 +17,7 @@ watch([x, y], () => {
 <template><div>
     
 <!-- Logo, Search (todo) & Menu -->
-<div class="container flex w-full">
+<div class="relative container flex w-full">
 
     <div><!-- Logo and Web Name -->
         <!-- Logo -->
@@ -40,7 +35,7 @@ watch([x, y], () => {
 
     <div class="grow">&nbsp;</div>
 
-    <div class="place-self-end">
+    <div class="absolute top-0 right-0">
         <ShipMenu id="main-menu" />
     </div>
 
