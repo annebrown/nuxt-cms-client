@@ -1,4 +1,4 @@
-# Headless CMS Client
+# Headless Nuxt CMS Client
 
 ![Logo](/src/public/logo-w-text.svg)
 
@@ -11,7 +11,7 @@
 
 App: [docs.ab.ca](https://github.com/annebrown/docs.ab.ca)
 
-Headless Source:[content-base](https://github.com/annebrown/content-base)
+Headless Source: [content-base](https://github.com/annebrown/content-base)
 
 ## Deployments
 
