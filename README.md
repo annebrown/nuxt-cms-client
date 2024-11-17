@@ -25,6 +25,10 @@ Netlify: [misscommunicaitons.ca](https://www.misscommunications.ca) - Rqd additi
 }
 ```
 
+## Other Prototypes
+
+[browndomain.com](https://www.browndomain.com)
+
 ## Dev
 
 pnpm dev
