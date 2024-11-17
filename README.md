@@ -4,7 +4,7 @@
 
 ## Description
 
-@[Nuxt](https://nuxt.com/)/[Content](https://content.nuxt.com/) Template - Access to external, headless CMS
+@[Nuxt](https://nuxt.com/)/[Content](https://content.nuxt.com/) Template - Access External, Headless CMS
 
 ## Repos
 
