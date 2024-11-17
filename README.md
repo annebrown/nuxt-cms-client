@@ -1,4 +1,4 @@
-# Miss Communication
+# Headless CMS Client
 
 ![Logo](/src/public/logo-w-text.svg)
 
@@ -15,9 +15,9 @@ Headless Source:[content-base](https://github.com/annebrown/content-base)
 
 ## Deployments
 
-[docs.annebrown.ca](https://docs.annebrown.ca)
+Vercel: [docs.annebrown.ca](https://docs.annebrown.ca)
 
-[misscommunicaitons.ca](https://www.misscommunications.ca)
+Netlify: [misscommunicaitons.ca](https://www.misscommunications.ca)
 
 ## Dev
 
