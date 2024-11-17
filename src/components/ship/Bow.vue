@@ -2,8 +2,6 @@
 
 import { useMouse } from '@vueuse/core'
 
-
-
 const onMouseMove = () => {
   console.log(`Mouse moved to: x: ${x.value}, y: ${y.value}`)
 }
@@ -17,26 +15,39 @@ watch([x, y], () => {
   isShaking.value = true
   setTimeout(() => {
     isShaking.value = false
-  }, 500) // Adjust this value to control how long the shake lasts
+  }, 500) // shake duration
 })
 </script>
 
-<template>
-   
-<div><!-- Logo and Logo Text -->
+<template><div>
+    
+<!-- Logo, Search (todo) & Menu -->
+<div class="container flex w-full">
 
-    <!-- Logo Img -->
-    <ImgLogo class="inline-block h-10 w-10 p-1" />
-            
-    <!-- Logo Text -->  
-        <div class='inline-block align-top mt-2 mr-2 ml-1'>
-    <NuxtLink href='/'>
-        <span class="text-sky-500">docs.annebrown.ca</span>
-    </NuxtLink>
-</div>
-</div><!-- Logo -->
+    <div><!-- Logo and Web Name -->
+        <!-- Logo -->
+        <ImgLogo class="
+            circle-icon inline-block h-10 w-10 p-1" 
+            :class="{ 'shake': isShaking }"
+        />      
+        <!-- Logo Text -->  
+         <div class='inline-block align-top mt-2 mr-2 ml-1'>
+            <NuxtLink href='/'>
+                <span class="text-sky-500"> misscommunication.ca</span>
+            </NuxtLink>
+        </div>
+    </div><!-- Logo and Web Name -->
 
-</template>
+    <div class="grow">&nbsp;</div>
+
+    <div class="place-self-end">
+        <ShipMenu id="main-menu" />
+    </div>
+
+
+</div><!-- Logo, Search & Menu -->
+
+</div></template>
 
 <style>
 .circle-icon {

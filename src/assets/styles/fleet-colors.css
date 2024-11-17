@@ -32,7 +32,7 @@
         --text-dimmed-dark: #64748b; /* slate-500 */ 
 
         --title-light: #075985; /* sky-800 */
-        --title-dark: #84cc16; /* green-500 */ 
+        --title-dark: #f97316; /* orange-500 */ 
         --heading-light: #155e75; /* cyan-800 */
         --heading-dark: #f97316; /* orange-500 */
 
@@ -69,13 +69,10 @@
 /******************************************************************************/
 body { @apply bg-[--body-light] dark:bg-[--body-dark]; }
 #midships { @apply bg-[--midships-light] dark:bg-[--midships-dark]
-    ring-2 ring-[--midships-ring-light] dark:ring-[--midships-ring-dark] rounded-lg; }
-#navi, #sidebar { @apply
+    rounded-lg; }
+#navi, #star-gunnel, #main-menu { @apply
     bg-[--body-light] dark:bg-[--body-dark]
     rounded-lg; }
-/* #navi, #sidebar { @apply
-    bg-[--body-light] dark:bg-[--body-dark]
-    ring-2 ring-[--main-ring-light] dark:ring-[--main-ring-dark] rounded-lg; }*/
  /******************************************************************************/
 /*
 /* Text 
@@ -89,9 +86,9 @@ p#transom { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
 p.dimmed { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
 h1, title { @apply text-[--title-light] dark:text-[--title-dark]; }
 h2, h2, h4 { @apply text-[--heading-light] dark:text-[--heading-dark]; }
-.shiki { @apply text-xs text-wrap; }
+.shiki { @apply text-xs text-wrap mb-4; }
 pre, pre code {
-    @apply bg-gray-200 dark:bg-gray-900 rounded-lg px-3 text-xs mb-8;
+    @apply bg-gray-200 dark:bg-gray-950 rounded-lg px-3 text-xs;
 }
 /******************************************************************************/
 /*

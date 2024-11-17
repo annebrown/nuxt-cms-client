@@ -1,5 +1,4 @@
-<template>
-<div class="page relative p-2">
+<template><div>
 
     <ContentDoc v-slot='{ doc }' class="float-left">
         <h1 id='title' class='title pb-3'>
@@ -16,11 +15,5 @@
             <ContentRenderer :value="doc" />
         </div>
     </ContentDoc>
-
-    <div class="absolute top-[70px] -right-[48px] justify-end w-fit h-fit m-0 p-0">
-        <Sidebar  id="sidebar" class="p-8" />
-    </div>
             
-
-</div>
-</template>
+</div></template>

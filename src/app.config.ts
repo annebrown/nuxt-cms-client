@@ -1,7 +1,7 @@
 export default defineAppConfig({
   cover: '/cover.png',
   socials: {
-    github: 'annebrown',
+    github: 'annebrown/docs.bd.com',
   },
 
 })

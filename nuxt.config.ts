@@ -11,7 +11,6 @@ export default defineNuxtConfig({
         '@nuxtjs/color-mode',
         '@nuxtjs/google-fonts',
         '@nuxt/icon',
-        '@vueuse/nuxt'
     ],
     colorMode: {
         classSuffix: '',
@@ -20,6 +19,7 @@ export default defineNuxtConfig({
     srcDir: 'src/',
 
     content: {
+
         documentDriven: true,
         // Ignore "Number Dot" ordering in /content
         ignores: ['^\\.', '^-', '^[0-5]\\d*\\.'],
@@ -34,24 +34,26 @@ export default defineNuxtConfig({
         
         sources: {
             github: {
-              prefix: '/docs', // Prefix for routes used to query contents
-              driver: 'github', // 
+              prefix: '/docs', // Prefix for routes
+              driver: 'github',
               repo: "annebrown/content-base",
               branch: "main",
               dir: "content", 
             },
         }
-      
-    },
+    }, // Content
+
     nitro: {
         prerender: {
             crawlLinks: true,
             failOnError: false,
         },
     },
+
     compatibilityDate: '2024-09-28',
     
     css: ['@/assets/styles/fleet.css'],
+
     googleFonts: {
         download: true,
         families: {

@@ -1,72 +1,23 @@
-<!-- @/layouts/default.vue -->
 <script setup lang="ts">
-    const { data } = 
-        await useAsyncData('page-data', () => queryContent('').findOne())
-    const { toc, prev, next } = useContent()
-    
+    const { toc } = useContent()
 </script>
-
 
 <template><div><!-- Layouts -> Single Root Element -->
 
-    <div id="midships"><!-- Midships -->
+<!-- Grid - content & toc -->
+<div class="grid grid-col-2 grid-flow-col w-fit p-1 sm:p-2">
 
-        <!-- Title -->
-        <ContentDoc v-slot="{ doc }" class="prose" >
-            <h1 id="title" class="content-title">
-                <slot name="title">{{ doc.title }}</slot>
-            </h1> 
-        </ContentDoc>
+  <ShipHold />
+    
+    <div 
+        v-if="toc && toc.links"
+        class="max-w-fit h-fit m-0 ml-1 mt-22 -mr-20"
+    >
 
-        <div id="ship-deck">
+            <StarGunnel class="p-2 -mr-16" />
+        
+    </div>
 
-            <div id="ship-port-gunnel" class="content-port-gunnel">
-                <ShipPortGunnel /> <!-- Content Navi -->  
-            </div><!-- ShipPortGunnel-->
-                    
-            <div id="ship-hold">
-
-                <ContentDoc v-slot="{ doc }">
-                    
-                    <!-- ShipCargo-->
-                    <div class="content-cargo">
-                        <h2>Description</h2>
-                        <p>{{ doc.description }}</p>
-                        
-                        <div class="">
-                            <ContentRenderer :value="doc" />
-                        </div>
-                    </div><!-- ShipCargo-->
-
-                </ContentDoc>
-
-            </div><!-- ShipHold -->
-
-            <div id="ship-star-gunnel" class="content-star-gunnel">
-                <ShipStarGunnel />
-            </div><!-- ShipStarGunnel --> 
-
-        </div><!-- ShipDeck -->
-
-        <div id="ship-rudder">
-            <!--
-            <NuxtLink class="grow" v-if="prev.title" :to="prev._path">
-                Previous: {{ prev.title }}
-            </NuxtLink>
-            <NuxtLink class="grow" v-if="next.title" :to="next._path">
-                Next: {{ next.title }}
-            </NuxtLink>
-            -->
-        </div><!-- Rudder -->
-
-    </div><!-- Midships -->
+</div><!-- Grid - content & toc -->
 
 </div></template><!-- Layouts -> Single Root Element -->
-
-<style>
-.content-port-gunnel, .content-star-gunnel {
-    @apply bg-transparent dark:bg-transparent text-xs; }
-.content-title { 
-    @apply text-[--primary] dark:text-[--primary-dark] text-center m-0 p-0; }
-.content-cargo { @apply m-2 sm:m-4 md:m-5 ml-8; }
-</style>

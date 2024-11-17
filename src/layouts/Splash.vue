@@ -1,19 +1,24 @@
-<!-- @/layouts/splash.vue -->
-<script setup lang="ts">    
-const route = useRoute()
-</script>
-
 <template><div><!-- Layouts -> Single Root Element -->
 
-<!-- Midships -->
-<div id="midships" class="flex w-fit m-0 p-0">
-
-    <div id="hold" class="min-w-96  float-left w-fit p-5">
-        <slot><!-- /page --></slot>
+    <div class="relative p-1 sm:p-2 md:p-4 lg:p-8">
+    
+        <!-- Title -->
+        <h1 class="">
+            <slot name="title"></slot>
+        </h1><!-- Title -->
+    
+        <!-- Description -->
+        <p id="description" class="text-center text-xs">
+            <slot name="description"></slot>
+        </p>
+        <!-- description -->
+    
+        <!-- Cargo -->
+        <div id="cargo">
+            <slot></slot>
+        </div>
+    
     </div>
-
-
-</div><!-- Midships -->
-
-</div></template><!-- Layouts -> Single Root Element -->
+    
+    </div></template><!-- Layouts -->
 
