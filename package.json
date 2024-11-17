@@ -28,7 +28,7 @@
     "remark-directive": "^3.0.0",
     "vue-toc": "^0.0.2",
     "vue": "latest",
-    "vue-router": "latest",
+    "vue-router": "latest"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1"
