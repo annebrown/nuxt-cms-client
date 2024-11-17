@@ -26,7 +26,9 @@
     "pnpm": "^9.11.0",
     "rehype-class-names": "^2.0.0",
     "remark-directive": "^3.0.0",
-    "vue-toc": "^0.0.2"
+    "vue-toc": "^0.0.2",
+    "vue": "latest",
+    "vue-router": "latest",
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1"

@@ -16,7 +16,14 @@ Headless Source: [content-base](https://github.com/annebrown/content-base)
 
 Vercel: [docs.annebrown.ca](https://docs.annebrown.ca)
 
-Netlify: [misscommunicaitons.ca](https://www.misscommunications.ca)
+Netlify: [misscommunicaitons.ca](https://www.misscommunications.ca) - Rqd additional deps in `package.json`:
+
+```json
+"dependencies": {
+  "vue": "latest",
+  "vue-router": "latest"
+}
+```
 
 ## Dev
 
