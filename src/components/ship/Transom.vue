@@ -12,7 +12,7 @@
             cursor-text
     ">
         @
-    </NuxtLink> 2024  <NuxtLink href='/'>Anne Brown</NuxtLink>
+    </NuxtLink> 2024  <NuxtLink href='https://www.annebrown.ca'>Anne Brown</NuxtLink>
 </span>
 
  <!-- Center of Transom -->

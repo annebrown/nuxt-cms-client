@@ -1,23 +1,29 @@
 <script setup lang="ts">
-    definePageMeta({
-        title: 'ABOUT',
-        description: 'Technology development and documentation site',
-    })
-    const colorMode = useColorMode()
-
+definePageMeta({
+    title: 'ABOUT',
+    description: 'Technology development and documentation site',
+})
 </script>
 
-<template>
+<template><div>
+<NuxtLayout name="splash">
 
-    <NuxtLayout name="splash">
+    <template #title>
+        About
+    </template>
 
-        <template #title>
-            About
-        </template>
+    <p>Technology development and documentation site</p>
 
-            <p>Technology development and documentation site</p>
+    <h2>Description</h2>
 
-    </NuxtLayout>
+    <p>
+        Demo - @<NuxtLink href="https://nuxt.com/">Nuxt</NuxtLink> Template - Access External, Headless CMS
+    </p>
 
-</template>
+    <h2>Other Sites</h2>
+
+    <NuxtLink href="https://annebrown.ca/devy/dash">annebrown.ca</NuxtLink>
+
+</NuxtLayout>
+</div></template>
  
