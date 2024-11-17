@@ -8,7 +8,7 @@ colorMode.preference = 'dark';
 <NuxtRouteAnnouncer /><!-- Assistive Technologies --> 
 
 <!-- Center Everything -->
-<div class="relative min-w-96 max-w-2xl md:max-w-fit h-fit mx-auto pt-[1rem] pb-[2rem] pl-[3rem]">
+<div class="relative min-w-96 max-w-2xl md:max-w-fit h-fit mx-auto pb-[2rem] pl-[3rem]">
 
     <div id="main" class="w-fit"><!-- main -->
         

@@ -19,14 +19,14 @@ watch([x, y], () => {
 <!-- Logo, Search (todo) & Menu -->
 <div class="relative container flex w-full">
 
-    <div><!-- Logo and Web Name -->
+    <div class="mt-[1rem]"><!-- Logo and Web Name -->
         <!-- Logo -->
         <ImgLogo class="
             circle-icon inline-block h-10 w-10 p-1" 
             :class="{ 'shake': isShaking }"
         />      
         <!-- Logo Text -->  
-         <div class='inline-block align-top mt-2 mr-2 ml-1'>
+         <div class='inline-block align-bottom mr-2 ml-1 bg-[--body-light] dark:bg-[--body-dark] p-1 px-2 rounded-lg '>
             <NuxtLink href='/'>
                 <span class="text-sky-500"> misscommunication.ca</span>
             </NuxtLink>
@@ -36,7 +36,7 @@ watch([x, y], () => {
     <div class="grow">&nbsp;</div>
 
     <div class="absolute top-0 right-0">
-        <ShipMenu id="main-menu" />
+        <ShipMenu id="main-menu" class="mt-5 mr-1 p-1 px-2" />
     </div>
 
 
