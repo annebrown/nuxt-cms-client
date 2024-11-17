@@ -1,8 +1,11 @@
-# content-app
+# Miss Communication
+
+![Logo](/src/public/logo-w-text.svg)
 
 ## Description
 
-Prototype App for remote, headless source (GitHub: annebrown/content-base)
+@[Nuxt](https://nuxt.com/)/[Content](https://content.nuxt.com/) Template App for Accessing External, Headless CMS
+
 
 ## Repos
 
@@ -13,6 +16,8 @@ Headless Source:[content-base](https://github.com/annebrown/content-base)
 ## Deployments
 
 [docs.annebrown.ca](https://docs.annebrown.ca)
+
+[misscommunicaitons.ca](https://www.misscommunications.ca)
 
 ## Dev
 
