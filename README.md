@@ -8,7 +8,7 @@
 
 ## Repos
 
-App: [docs.ab.ca](https://github.com/annebrown/docs.ab.ca)
+App: [nuxt-cms-client](https://github.com/annebrown/nuxt-cms-client)
 
 Headless Source: [content-base](https://github.com/annebrown/content-base)
 
