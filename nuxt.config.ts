@@ -1,3 +1,5 @@
+import { resolve } from "node:path"; // Local Content
+
 export default defineNuxtConfig({
 
     devtools: { enabled: true },
@@ -40,10 +42,10 @@ export default defineNuxtConfig({
               branch: "main",
               dir: "content", 
             },
-            content: {
+            local: {
                 prefix: '/local', // Prefix for routes
                 driver: 'fs',
-                base: resolve(__dirname, '~/prod/content-data/content-data.mc.ca'),
+                base: resolve(__dirname, '~/prod/content-data/content-data.mc.ca/content'),
               },
         }
     }, // Content
