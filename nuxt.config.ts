@@ -40,6 +40,11 @@ export default defineNuxtConfig({
               branch: "main",
               dir: "content", 
             },
+            content: {
+                prefix: '/local', // Prefix for routes
+                driver: 'fs',
+                base: resolve(__dirname, '~/prod/content-data/content-data.mc.ca'),
+              },
         }
     }, // Content
 
