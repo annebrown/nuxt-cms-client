@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-const remoteQuery = queryContent('/')
-const { data: navigation, pending } = await useLazyAsyncData('navigation', () => fetchContentNavigation(remoteQuery))
-// const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+import { useLazyAsyncData, queryContent, fetchContentNavigation } from '#imports'
+
+const localQuery = queryContent('/local')
+const { data: navigation, pending } = await useLazyAsyncData('navigation', () => fetchContentNavigation(localQuery))
 
 const organizedNavigation = computed(() => {
   if (!navigation.value) return []
@@ -43,7 +44,7 @@ const filteredNavigation = computed(() => filterDuplicateRoutes(organizedNavigat
 <template>
   <nav>
     <ul class="navigation-tree">
-      <NaviNavigationItem
+      <NaviLocalNavigationItem
         v-for="item in filteredNavigation"
         :key="item._path"
         :item="item"

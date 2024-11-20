@@ -5,7 +5,7 @@
 </script>
 
 <template>
-<ul v-if="toc.links.length !== 0" id="star-gunnel" class="text-xs">
+<ul v-if="toc.links.length !== 0" id="sidebar" class="text-xs p-2">
     <li 
         v-if="toc.links.length !== 0"
         class="text-center text-[--title-light] dark:text-[--title-dark] font-bold p-1">

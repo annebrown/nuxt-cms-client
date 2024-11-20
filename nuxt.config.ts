@@ -2,6 +2,8 @@ import { resolve } from "node:path"; // Local Content
 
 export default defineNuxtConfig({
 
+    telemetry: false, // F Telemetry
+
     devtools: { enabled: true },
   
     modules: [
@@ -31,7 +33,10 @@ export default defineNuxtConfig({
               default: 'github-light',
               dark: 'github-dark',
             },
-            langs: ['regexp', 'json', 'js', 'ts', 'tsx', 'html', 'css', 'vue','shell' , 'mdc', 'yaml', 'md' ],
+            langs: ['regexp', 'json', 'js', 'ts', 'tsx', 'html', 
+                'css', 'vue','shell' , 'mdc', 'yaml', 'md', 
+                'console', 'ini', 'java', 'diff' 
+            ],
         },
         
         sources: {
@@ -45,8 +50,8 @@ export default defineNuxtConfig({
             local: {
                 prefix: '/local', // Prefix for routes
                 driver: 'fs',
-                base: resolve(__dirname, '~/prod/content-data/content-data.mc.ca/content'),
-              },
+                base: resolve(__dirname, '/home/anne/prod/content-data/content-data/content'),
+            },
         }
     }, // Content
 
@@ -68,5 +73,3 @@ export default defineNuxtConfig({
         }
     },
   })
-  
-

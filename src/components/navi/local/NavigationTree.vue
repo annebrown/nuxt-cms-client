@@ -9,7 +9,7 @@
             {{ item.isExpanded ? '-' : '+' }}
           </button>
         </div>
-        <NaviNavigationItem
+        <NaviLocalNavigationItem
           v-if="item.children && item.isExpanded" 
           :items="item.children"
           :current-path="currentPath"

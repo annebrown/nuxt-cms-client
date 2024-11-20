@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-const remoteQuery = queryContent('/')
-const { data: navigation, pending } = await useLazyAsyncData('navigation', () => fetchContentNavigation(remoteQuery))
-// const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
+
+const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
 
 const organizedNavigation = computed(() => {
   if (!navigation.value) return []
@@ -42,7 +41,13 @@ const filteredNavigation = computed(() => filterDuplicateRoutes(organizedNavigat
 
 <template>
   <nav>
-    <ul class="navigation-tree">
+    <p class="text-xs m-0 p-0 font-bold">
+        <NuxtLink href="/">HOME</NuxtLink>
+    </p>
+    <p class="text-xs m-0 p-0 font-bold">
+        <NuxtLink href="/devy">DEVY</NuxtLink>
+    </p>
+    <ul class="navigation-tree my-0">
       <NaviNavigationItem
         v-for="item in filteredNavigation"
         :key="item._path"
@@ -50,6 +55,10 @@ const filteredNavigation = computed(() => filterDuplicateRoutes(organizedNavigat
         :depth="0"
       />
     </ul>
+    <p class="text-xs m-0 p-0 font-bold">
+        <NuxtLink href="/about">ABOUT</NuxtLink>
+    </p>
+
   </nav>
 </template>
 

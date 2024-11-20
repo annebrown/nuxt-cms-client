@@ -27,7 +27,7 @@
         --accent-dark: #0ea5e9; /* sky-500 */ 
 
         --text-light: black; 
-        --text-dark: white;
+        --text-dark: #cbd5e1; /* gray-300 */ 
         --text-dimmed-light: #64748b; /* slate-500 */
         --text-dimmed-dark: #64748b; /* slate-500 */ 
 
@@ -86,10 +86,6 @@ p#transom { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
 p.dimmed { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
 h1, title { @apply text-[--title-light] dark:text-[--title-dark]; }
 h2, h2, h4 { @apply text-[--heading-light] dark:text-[--heading-dark]; }
-.shiki { @apply text-xs text-wrap mb-4; }
-pre, pre code {
-    @apply bg-gray-200 dark:bg-gray-950 rounded-lg px-3 text-xs;
-}
 /******************************************************************************/
 /*
 /* Text Links 

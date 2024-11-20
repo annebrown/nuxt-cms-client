@@ -6,11 +6,12 @@ definePageMeta({
 </script>
 
 <template><div>
+
 <NuxtLayout name="splash">
 
-    <template #title>
+    <template #title><span class="text-2xl">
         About
-    </template>
+    </span></template>
 
     <p>Technology development and documentation site</p>
 
@@ -20,9 +21,18 @@ definePageMeta({
         Demo - @<NuxtLink href="https://nuxt.com/">Nuxt</NuxtLink> Template - Access External, Headless CMS
     </p>
 
-    <h2>Other Sites</h2>
+          
+    <hr />
 
-    <NuxtLink href="https://annebrown.ca/devy/dash">annebrown.ca</NuxtLink>
+<p class="mb-4 font-normal text-xs">
+    <NuxtLink href="https://annebrown.ca/devy/dash">
+        Other Sites
+    </NuxtLink>
+    |
+    <NuxtLink href="login">
+        Login
+    </NuxtLink>
+</p>
 
 </NuxtLayout>
 </div></template>

@@ -19,7 +19,9 @@ watch([x, y], () => {
 <!-- Logo, Search (todo) & Menu -->
 <div class="relative container flex w-full">
 
-    <div class="mt-[1rem]"><!-- Logo and Web Name -->
+    <!-- Logo and Web Name -->
+    <div class="mt-[1rem]">
+        
         <!-- Logo -->
         <ImgLogo class="
             circle-icon inline-block h-10 w-10 p-1" 
