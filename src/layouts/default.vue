@@ -33,7 +33,8 @@
         <PortGunnel class="p-8" />
     </div>
     <div v-else>
-        <p>XXXXXXXXXXXXXXXXNO TOC HERE!XXXXXXXXXXX</p>
+        <!-- Logo -->
+        <!-- <ImgLogo class="circle-icon inline-block h-10 w-10 p-1" />  -->
     </div>
     
 </div><!-- Grid - content & toc -->
