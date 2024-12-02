@@ -1,10 +1,13 @@
+<!-- @/layouts/default.vue -->
+
 <script setup lang="ts">
     const { data } = 
         await useAsyncData('page-data', () => queryContent('').findOne())
     const { toc, prev, next } = useContent()
 </script>
 
-<template><div><!-- Layouts -> Single Root Element -->
+<!-- Layout (Single Root Element) -->
+<template><div>
 
 <!-- Grid - content & toc -->
 <div class="grid grid-col-2 grid-flow-col w-fit  mr-2 p-1 sm:p-2">
@@ -28,9 +31,9 @@
         </ContentDoc>
     </div><!-- Hold --> 
 
-    <!-- PortGunnel -->
-    <div v-if="toc && toc.links" class="max-w-fit h-fit m-0 -mr-14 mt-22">
-        <PortGunnel class="p-8" />
+    <!-- StarGunnel -->
+    <div v-if="toc && toc.links" id="star-gunnel" class="w-fit h-fit m-0 -mr-14 mt-22">
+        <StarGunnel class="p-1" />
     </div>
     <div v-else>
         <!-- Logo -->
@@ -39,4 +42,6 @@
     
 </div><!-- Grid - content & toc -->
 
-</div></template><!-- Layouts -> Single Root Element -->
+</div></template><!-- Layout (Single Root Element) -->
+
+<!-- @/layouts/default.vue -->
