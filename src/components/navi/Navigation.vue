@@ -2,7 +2,6 @@
 import { computed } from 'vue'
 const remoteQuery = queryContent('/')
 const { data: navigation, pending } = await useLazyAsyncData('navigation', () => fetchContentNavigation(remoteQuery))
-// const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation())
 
 const organizedNavigation = computed(() => {
   if (!navigation.value) return []

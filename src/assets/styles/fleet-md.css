@@ -1,0 +1,24 @@
+/******************************************************************************/
+/*
+/* File: @/assets/styles/fleet-md.css
+/*
+/* See Also:
+/* - fleet.css
+/* 
+/* Markdown Styling
+/*
+/******************************************************************************/
+/* Testing */
+.alert { @apply bg-amber-700; }
+
+/* Code */
+.shiki { @apply text-xs text-wrap mb-4; }
+
+ /* { @apply ; }
+ { @apply bg-gray-200 dark:bg-gray-950  rounded-lg ; }
+ */
+ code, pre { @apply p-[0.25rem]; }
+ code, pre { @apply text-xs w-fit text-wrap
+    bg-gray-200 dark:bg-gray-950  rounded-lg;}
+ pre { @apply px-4 py-1 ring-1 dark:ring-sky-950;}
+

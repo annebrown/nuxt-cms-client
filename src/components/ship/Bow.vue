@@ -28,9 +28,9 @@ watch([x, y], () => {
             :class="{ 'shake': isShaking }"
         />      
         <!-- Logo Text -->  
-         <div class='inline-block align-bottom mr-2 ml-1 bg-[--body-light] dark:bg-[--body-dark] p-1 px-2 rounded-lg '>
+         <div class='inline-block align-bottom mr-2 ml-0 p-1 px-2 bg-[--body-light] dark:bg-[--body-dark] text-[--title-light] dark:text-[--title-dark]  rounded-lg '>
             <NuxtLink href='/'>
-                <span class="text-sky-500"> misscommunication.ca</span>
+                <span class="text-sky-500 text-xs">misscommunication.ca</span>
             </NuxtLink>
         </div>
     </div><!-- Logo and Web Name -->

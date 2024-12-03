@@ -4,7 +4,7 @@
 <NuxtRouteAnnouncer /><!-- Assistive Technologies --> 
 
 <!-- Center Everything -->
-<div class="relative min-w-96 max-w-2xl md:max-w-fit h-fit mx-auto pb-[2rem] pl-[3rem]">
+<div class="relative min-w-96 max-w-fit h-fit mx-auto pb-[2rem] pl-[3rem]">
 
      <!-- Ship -->
     <div id="main" class="w-fit">
@@ -17,7 +17,8 @@
 
             <!-- Port Gunnel -->
             <div id="navi" class="w-fit h-fit mt-6 -ml-[50px]">
-                <NaviNavigation class="mr-2 my-2 text-xs" />
+                <!-- <NaviNavigation class="mr-2 my-2 text-xs" /> -->
+                <PortGunnel class="mr-2 my-2 text-xs" />
             </div>
 
             <!-- Cargo -->

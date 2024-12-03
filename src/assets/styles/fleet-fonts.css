@@ -8,11 +8,10 @@
 /* Text - Font, Size and Layout
 /*
 /******************************************************************************/
-h1 { @apply text-center text-2xl font-bold pb-5; }
-h2 { @apply text-left text-xl font-bold pb-4; }
+h1 { @apply text-center text-3xl font-bold pb-5; }
+h2 { @apply text-left text-2xl font-bold pb-4; }
 h3 { @apply text-left text-lg font-bold pb-4; }
-h4 { @apply text-left text-lg pb-3; }
+h4 { @apply text-left text-lg font-bold pb-3; }
 p  { @apply text-xs pb-3; }
 #bow { @apply text-sm; }
 #transom { @apply text-xs; }
-.shiki  { @apply text-xs text-wrap; }

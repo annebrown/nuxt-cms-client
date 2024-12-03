@@ -42,10 +42,7 @@ const filteredNavigation = computed(() => filterDuplicateRoutes(organizedNavigat
 <template>
   <nav>
     <p class="text-xs m-0 p-0 font-bold">
-        <NuxtLink href="/">HOME</NuxtLink>
-    </p>
-    <p class="text-xs m-0 p-0 font-bold">
-        <NuxtLink href="/devy">DEVY</NuxtLink>
+        <NuxtLink href="/">Home</NuxtLink>
     </p>
     <ul class="navigation-tree my-0">
       <NaviNavigationItem
@@ -56,7 +53,7 @@ const filteredNavigation = computed(() => filterDuplicateRoutes(organizedNavigat
       />
     </ul>
     <p class="text-xs m-0 p-0 font-bold">
-        <NuxtLink href="/about">ABOUT</NuxtLink>
+        <NuxtLink href="/about">About</NuxtLink>
     </p>
 
   </nav>

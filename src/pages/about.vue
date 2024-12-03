@@ -37,18 +37,14 @@ watch([x, y], () => {
 
     <!-- Sub-Title -->
     <p class="mb-2 pb-0">
-        Demo - Headless CMS <NuxtLink href="https://nuxt.com/">Nuxt</NuxtLink> Client
+        Technology Development Platform
     </p>
 
     <hr />
 
-<p class="mb-4 p-2 font-normal text-xs">
+<p class="mb-4 p-2 pl-0 font-normal text-xs">
     <NuxtLink href="https://annebrown.ca/devy/dash">
         Other Sites
-    </NuxtLink>
-    |
-    <NuxtLink href="login">
-        Login
     </NuxtLink>
 </p>
 
