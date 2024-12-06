@@ -1,47 +1,50 @@
 <!----------------------------@/layouts/default.vue---------------------------->
 <script setup lang="ts">
-    const { data } = 
-        await useAsyncData('page-data', () => queryContent('').findOne())
-    const { toc, prev, next } = useContent()
+    const { toc } = useContent()
 </script>
 
 <!-- Layout (Single Root Element) -->
 <template><div>
-
-   <!-- Flex -->
-   <div class="flex flex-row">
+   
+    <!-- Flex -->
+    <div class="flex flex-row">
+   
+       <!-- Port Gunnel -->
+       <div class="flex-1 gunnel max-w-fit h-fit 
+           mt-6 -ml-[50px] mb-2 p-2 rounded-lg">
+           XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+           <PortGunnel class="mr-2 text-xs" />
+       </div>
 
     <!-- Page Body -->
-    <div class="pr-2">
-        <ContentDoc v-slot='{ doc }' class="float-left">
-            <!-- Title -->
-            <h1 id='title' class='title pb-3'>
-                <slot name='title'>
-                    {{ doc.title }}
-                </slot>
-            </h1>
-            <!-- Description -->
-            <p class="description text-center pb-5">
-                    <slot name='description'>
-                    {{ doc.description }}
-                </slot>
-            </p>
-            <div class="p-2">
-                <ContentRenderer :value="doc" />
-            </div>
-        </ContentDoc>
+    <div class="flex-1 p-4 pt-0">
+           <ContentDoc v-slot='{ doc }' class="float-left">
+           <!-- Title -->
+               <h1 class="title">{{ page.title }}</h1>
+   
+               <!-- Description -->
+               <div v-if="page.description">
+                   <p class="description -mt-3 pb-4 text-center text-lg">{{ page.description }}</p>
+               </div>
+               <div v-else class="text-center text-lg text-amber-400">
+                   <p class="-mt-4 pb-4 text-center">XXXXXXXX No Description XXXXXXXX</p>
+               </div><!-- Description -->
+   
+               <!-- Rest of Page -->
+               <ContentRenderer :value="page" class="markdown p-2"/>
+           </ContentDoc>
+           
+           <!-- Child Route Cards-->
+           <RouteDynamicImmediateChildCards class="mt-" />
 
-        <!-- Child Route Cards-->
-        <RouteDynamicImmediateChildCards class="mt-" />
+        </div><!-- Page Body -->
 
-    </div><!-- Page Body -->
-
-    <!-- StarGunnel -->
-    <div v-if="toc && toc.links" id="star-gunnel" class="w-fit h-fit m-0 -mr-14 mt-22">
-        <StarGunnel class="p-1" />
-    </div><!-- StarGunnel -->
-    
-</div><!-- Flex -->
+       <!-- Star Gunnel -->
+       <div class="flex-1 max-w-[30%] md:max-w-fit">
+           <ContentStarGunnel />
+       </div><!-- Star Gunnel -->
+        
+    </div><!-- Flex -->
 
 </div></template><!-- Layout (Single Root Element) -->
 <!----------------------------@/layouts/default.vue---------------------------->

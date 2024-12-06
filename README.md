@@ -8,15 +8,15 @@
 
 ## Repos
 
-App: [nuxt-cms-client](https://github.com/annebrown/nuxt-cms-client)
+Client App: [nuxt-cms-client](https://github.com/annebrown/nuxt-cms-client)
 
-Headless Source: [content-base](https://github.com/annebrown/content-base)
+Markdown Content: [content-base](https://github.com/annebrown/content-base)
 
 ## Deployments
 
 Vercel: [docs.annebrown.ca](https://docs.annebrown.ca)
 
-Netlify: [misscommunicaitons.ca](https://www.misscommunications.ca) - Rqd additional deps in `package.json`:
+Netlify: [miscommunication.ca](https://misscommunication.ca) - Rqd additional deps in `package.json`:
 
 ```json
 "dependencies": {
@@ -27,7 +27,7 @@ Netlify: [misscommunicaitons.ca](https://www.misscommunications.ca) - Rqd additi
 
 ## Other Prototypes
 
-[browndomain.com](https://www.browndomain.com)
+[Gamma](https://gamma.annebrown.ca)
 
 ## Dev
 
@@ -36,7 +36,3 @@ pnpm dev
 ## Stack
 
 [Nuxt](https://nuxt.com/)
-
-## TODO
-
-Remove authn barnacles
