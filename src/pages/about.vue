@@ -14,7 +14,7 @@ watch([x, y], () => {
   isShaking.value = true
   setTimeout(() => {
     isShaking.value = false
-  }, 500) // shake duration
+  }, 900) // shake duration
 })
 
 </script>
@@ -24,14 +24,12 @@ watch([x, y], () => {
 <NuxtLayout name="splash">
 
     <!-- Logo -->
-    <div class="absolute w-[5rem] h-auto top-[0.5rem] right-[0.5rem]">
-        
-    </div>
-
- 
+    <ImgLogo class="absolute
+        w-[5rem] h-auto top-[2.75rem] right-[1rem]" 
+        :class="{ 'shake': isShaking }"/>      
 
     <!-- Title -->
-    <template #title><span class="text-2xl">
+    <template #title><span class="text-3xl !pt-8 font-bold">
         About
     </span></template>
 
@@ -42,7 +40,7 @@ watch([x, y], () => {
 
     <hr />
 
-<p class="mb-4 p-2 pl-0 font-normal text-xs">
+<p class="mb-2 p-2 pl-0 font-normal text-xs">
     <NuxtLink href="https://annebrown.ca/devy/dash">
         Other Sites
     </NuxtLink>

@@ -3,7 +3,7 @@
     <div class="relative p-1 sm:p-2 md:p-4 lg:p-8">
     
         <!-- Title -->
-        <h1 class="">
+        <h1 class="pt-4">
             <slot name="title"></slot>
         </h1><!-- Title -->
     

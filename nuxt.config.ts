@@ -72,4 +72,7 @@ export default defineNuxtConfig({
         Roboto: true,
         }
     },
+    features: {
+        devLogs: true,
+    },
   })
