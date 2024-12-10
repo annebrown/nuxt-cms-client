@@ -13,7 +13,7 @@
     <div class="flex flex-row">
    
        <!-- Port Gunnel -->
-       <div class="flex-1 gunnel max-w-fit h-fit 
+       <div class="flex-none gunnel max-w-fit h-fit
            mt-6 -ml-[50px] mb-2 p-2 rounded-lg">
            <PortGunnel class="mr-2 text-xs" />
        </div>
@@ -37,13 +37,13 @@
            </ContentDoc>
            
            <!-- Child Route Cards-->
-           <RouteDynamicImmediateChildCards class="mt-" />
+           <RouteDynamicImmediateChildCards class="mt-1" />
 
         </div><!-- Page Body -->
 
        <!-- Star Gunnel -->
-       <div class="flex-1 max-w-[30%] md:max-w-fit">
-           <ContentStarGunnel />
+       <div class="flex-none max-w-fit">
+           <StarGunnel />
        </div><!-- Star Gunnel -->
         
     </div><!-- Flex -->

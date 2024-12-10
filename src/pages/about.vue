@@ -20,12 +20,11 @@ watch([x, y], () => {
 </script>
 
 <template><div>
-
 <NuxtLayout name="splash">
 
     <!-- Logo -->
     <ImgLogo class="absolute
-        w-[5rem] h-auto top-[2.75rem] right-[1rem]" 
+        w-[4rem] h-auto top-[5.5rem] right-[1.2rem]" 
         :class="{ 'shake': isShaking }"/>      
 
     <!-- Title -->
@@ -34,17 +33,17 @@ watch([x, y], () => {
     </span></template>
 
     <!-- Sub-Title -->
-    <p class="mb-2 pb-0">
+    <p class="mb-2 mx-2 pb-0 text-sm">
         Technology Development Platform
     </p>
 
-    <hr />
+    <hr class="mx-2">
 
-<p class="mb-2 p-2 pl-0 font-normal text-xs">
-    <NuxtLink href="https://annebrown.ca/devy/dash">
-        Other Sites
-    </NuxtLink>
-</p>
+    <p class="mx-2 mb-4 p-2 pl-0 text-small">
+        <NuxtLink href="https://annebrown.ca/devy/dash">
+            Other Sites
+        </NuxtLink>
+    </p>
 
 </NuxtLayout>
 </div></template>

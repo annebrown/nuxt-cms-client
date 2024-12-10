@@ -5,7 +5,7 @@
    viewBox="0 0 24 24"
    version="1.1"
    id="svg1"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="logo-no-text.svg"
    inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,8 +27,8 @@
      inkscape:cy="12.485137"
      inkscape:window-width="1239"
      inkscape:window-height="734"
-     inkscape:window-x="1487"
-     inkscape:window-y="868"
+     inkscape:window-x="678"
+     inkscape:window-y="939"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer3" />
   <path
@@ -73,18 +73,5 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Layer 3"
-     style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.14369px;font-family:'IBM Plex Mono';-inkscape-font-specification:'IBM Plex Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.488733;stroke-linecap:round;stroke-opacity:1;paint-order:stroke fill markers"
-       x="6.7942767"
-       y="15.239924"
-       id="text11"
-       transform="scale(1.1089522,0.90175212)"><tspan
-         sodipodi:role="line"
-         id="tspan11"
-         x="6.7942767"
-         y="15.239924"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.14369px;font-family:'IBM Plex Mono';-inkscape-font-specification:'IBM Plex Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.488733">DOCS</tspan></text>
-  </g>
+     style="display:inline" />
 </svg>

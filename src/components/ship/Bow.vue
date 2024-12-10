@@ -16,50 +16,41 @@ watch([x, y], () => {
 
 <template><div>
     
-<!-- Logo, Search (todo) & Menu -->
+<!-- Flex -->
 <div class="relative container flex w-full">
 
-    <!-- Logo and Web Name -->
-    <div class="mt-[1rem]">
+    <!-- Logo and Site Name -->
+    <div class="absolute top-0 left-[0.8rem]">
         
         <!-- Logo -->
-        <ImgLogo class="
-            circle-icon inline-block h-10 w-10 p-1" 
-            :class="{ 'shake': isShaking }"
-        />      
-        <!-- Logo Text -->  
-         <div class='inline-block align-bottom mr-2 ml-0 p-1 px-2 bg-[--body-light] dark:bg-[--body-dark] text-[--title-light] dark:text-[--title-dark]  rounded-lg '>
+        <NuxtLink href='/'>
+            <Img src="logo-no-text.svg" class="z-0 inline-block h-12 w-12 m-0 mt-[0.15rem] p-1 " 
+                alt='Open book with text (DOCS)' /> 
+        </NuxtLink>
+
+        <!-- Site Name -->  
+        <div class='z-10 inline-block align-middle m-0 p-0 
+            bg-[--body-light] dark:bg-[--body-dark] 
+            text-[--title-light] dark:text-[--title-dark] rounded-lg'>
             <NuxtLink href='/'>
-                <span class="text-sky-500 text-xs">misscommunication.ca</span>
+                <span class="text-black text-[9px] w-fit m-0 mt-[0.1rem] -ml-[2rem] p-0">
+                    DOCS
+                </span>
+
+                <span class="text-sky-500 text-[12px] w-fit m-0 mt-2 ml-[0.1rem] p-0 pr-2">
+                    .annebrown.ca
+                </span>
             </NuxtLink>
         </div>
-    </div><!-- Logo and Web Name -->
+    </div><!-- Logo and Site Name -->
 
     <div class="grow">&nbsp;</div>
 
-    <div class="absolute top-0 right-0">
-        <ShipMenu id="main-menu" class="mt-5 mr-1 p-1 px-2" />
+    <!-- Main App Menu -->
+    <div class="absolute top-[1.25rem] right-3">
+        <ShipMenu id="main-menu" class="px-3 py-1" />
     </div>
 
-
-</div><!-- Logo, Search & Menu -->
+</div><!-- Flex -->
 
 </div></template>
-
-<style>
-.circle-icon {
-  display: inline-block;
-}
-
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-2px); }
-  50% { transform: translateX(2px); }
-  75% { transform: translateX(-2px); }
-  100% { transform: translateX(0); }
-}
-
-.shake {
-  animation: shake 0.25s ease-in-out;
-}
-</style>

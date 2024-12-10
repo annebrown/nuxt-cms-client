@@ -2,7 +2,6 @@
 
 <NuxtImg    
     src='logo.svg' 
-    alt='Logo - Phone Handset with X Hangup Symbol'
+    alt='Logo - Open Book with initials, AB on Sails'
     height='480' width='480' />
-
 </template>
