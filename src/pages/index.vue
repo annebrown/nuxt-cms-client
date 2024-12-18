@@ -12,7 +12,7 @@
     <template #title>
         <span class="text-3xl font-bold mt-4 mb-0 pb-0">DOCS</span>
         <span class="text-sm font-bold mb-0 pb-0 
-            text-[--link-light] !dark:text-[--link-dark]">.annebrown.ca</span>
+            text-[--primary-light] !dark:text-[--primary-dark]">.annebrown.ca</span>
     </template>
     
     <NuxtImg src="logo.svg" width="100" height="100" alt="logo" class="mx-auto m-0 -mt-5 p-0 pb-2"/>

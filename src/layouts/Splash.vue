@@ -1,6 +1,6 @@
 <template><div><!-- Layouts -> Single Root Element -->
 
-    <div class="relative p-1 sm:p-2 md:p-4 lg:p-8">
+    <div class="relative min-w-72 p-1 sm:p-2 md:p-4">
     
         <!-- Title -->
         <h1 class="pt-4">

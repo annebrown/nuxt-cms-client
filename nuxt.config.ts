@@ -41,7 +41,7 @@ export default defineNuxtConfig({
         
         sources: {
             github: {
-              prefix: '/docs', // Prefix for routes
+              prefix: '/public', // Prefix for routes
               driver: 'github',
               repo: "annebrown/content-base",
               branch: "main",

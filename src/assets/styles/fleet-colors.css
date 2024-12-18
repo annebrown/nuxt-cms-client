@@ -25,37 +25,20 @@
     :root {
         --accent-light: #0ea5e9; /* sky-500 */ 
         --accent-dark: #0ea5e9; /* sky-500 */ 
-
+        --primary-light: #f97316; /* orange-500 */
+        --primary-dark: #f97316; /* orange-500 */
         --text-light: black; 
         --text-dark: #cbd5e1; /* gray-300 */ 
         --text-dimmed-light: #64748b; /* slate-500 */
         --text-dimmed-dark: #64748b; /* slate-500 */ 
 
-        --title-light: #075985; /* sky-800 */
-        --title-dark: #f97316; /* orange-500 */ 
-        --heading-light: #155e75; /* cyan-800 */
-        --heading-dark: #f97316; /* orange-500 */
-
-        --link-light: #0ea5e9; /* sky-500 */ 
-        --link-dark: #0ea5e9; /* sky-500 */ 
-
-        --body-light: #cbd5e1; /* slate-300 */
-        --body-dark: #020617; /* gray-950 */
+        --body-bg-light: #cbd5e1; /* slate-300 */
+        --body-bg-dark: #020617; /* gray-950 */
 
         --midships-light: white;
         --midships-dark: #0f172a; /* gray-900 */
         --midships-ring-light: white;
         --midships-ring-dark: #020617; /* gray-950 */
-
-        --main-ring-light:  #4d7c0f; /* lime-700 */ 
-        --main-ring-dark: #020617; /* gray-950 */ 
-
-        --bow-text-light: #4d7c0f; /* green-700 */
-        --bow-text-dark: #bef264; /* lime-300 */ 
-        --navi-ring-light: #64748b; /* slate-500 */
-        --navi-ring-dark: #bef264; /* lime-300 */ 
-        --navi-bg-light: black;  
-        --navi-bg-dark: black;
 
         --debug-text-light: #f97316; /* orange-500 */
         --debug-text-dark: #f97316; /* orange-500 */
@@ -67,36 +50,34 @@
 /* Containers
 /*
 /******************************************************************************/
-body { @apply bg-[--body-light] dark:bg-[--body-dark]; }
+body { @apply bg-[--body-bg-light] dark:bg-[--body-bg-dark]; }
 #midships { @apply bg-[--midships-light] dark:bg-[--midships-dark]
     rounded-lg; }
-#navi, #star-gunnel, #main-menu { @apply
-    bg-[--body-light] dark:bg-[--body-dark]
+#navi, #main-menu { @apply
+    bg-[--body-bg-light] dark:bg-[--body-bg-dark]
     rounded-lg; }
- /******************************************************************************/
+.gunnel { @apply bg-[--body-bg-light] dark:bg-[--body-bg-dark]; }
+/******************************************************************************/
 /*
 /* Text 
 /*
 /******************************************************************************/
 p { @apply text-[--text-light] dark:text-[--text-dark]; }
-p#navi { @apply text-xs; }
-p#navi a { @apply  text-sky-500 dark:text-sky-500; }
-p#bow { @apply text-[--bow-text-light] dark:text-[--bow-text-dark]; }
 p#transom { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
 p.dimmed { @apply text-[--text-dimmed-light] dark:text-[--text-dimmed-dark]; }
-h1, title { @apply text-[--title-light] dark:text-[--title-dark]; }
-h2, h2, h4 { @apply text-[--heading-light] dark:text-[--heading-dark]; }
+h1, title { @apply text-[--accent-light] dark:text-[--accent-dark]; }
+h2, h2, h4 { @apply text-[--primary-light] dark:text-[--primary-dark]; }
 /******************************************************************************/
 /*
 /* Text Links 
 /*
 /******************************************************************************/
-a { @apply text-[--link-light] dark:text-[--link-dark]; }
+a { @apply text-[--primary-light] dark:text-[--primary-dark]; }
 a:hover, a:active, a:focus { @apply text-current dark:text-current font-bold; } 
 /******************************************************************************/
 /*
 /* Icon Links 
 /*
 /******************************************************************************/
-svg { @apply stroke-[--link-light] dark:stroke-[--link-dark] stroke-2; }
+svg { @apply stroke-[--primary-light] dark:stroke-[--primary-dark] stroke-2; }
 svg:hover, svg:active, svg:focus { @apply stroke-current dark:stroke-current stroke-2; } 

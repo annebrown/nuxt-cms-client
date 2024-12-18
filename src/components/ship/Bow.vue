@@ -24,14 +24,14 @@ watch([x, y], () => {
         
         <!-- Logo -->
         <NuxtLink href='/'>
-            <Img src="logo-no-text.svg" class="z-0 inline-block h-12 w-12 m-0 mt-[0.15rem] p-1 " 
+            <img src="/logo-no-text.svg" class="z-0 inline-block h-12 w-12 m-0 mt-[0.15rem] p-1 " 
                 alt='Open book with text (DOCS)' /> 
         </NuxtLink>
 
         <!-- Site Name -->  
         <div class='z-10 inline-block align-middle m-0 p-0 
             bg-[--body-light] dark:bg-[--body-dark] 
-            text-[--title-light] dark:text-[--title-dark] rounded-lg'>
+            text-[--accent-light] dark:text-[--accent-dark] rounded-lg'>
             <NuxtLink href='/'>
                 <span class="text-black text-[9px] w-fit m-0 mt-[0.1rem] -ml-[2rem] p-0">
                     DOCS

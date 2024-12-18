@@ -2,30 +2,14 @@
 definePageMeta({
     title: 'ABOUT',
     description: 'Technology development and documentation site',
+    order: 50,
 })
-
-import { useMouse } from '@vueuse/core'
-import { ref, watch } from 'vue'
-
-const { x, y } = useMouse()
-const isShaking = ref(false)
-
-watch([x, y], () => {
-  isShaking.value = true
-  setTimeout(() => {
-    isShaking.value = false
-  }, 900) // shake duration
-})
-
 </script>
 
 <template><div>
 <NuxtLayout name="splash">
 
-    <!-- Logo -->
-    <ImgLogo class="absolute
-        w-[4rem] h-auto top-[5.5rem] right-[1.2rem]" 
-        :class="{ 'shake': isShaking }"/>      
+      
 
     <!-- Title -->
     <template #title><span class="text-3xl !pt-8 font-bold">
@@ -37,10 +21,16 @@ watch([x, y], () => {
         Technology Development Platform
     </p>
 
-    <hr class="mx-2">
+    <div class="relative">
 
+        <hr class="mx-2">
+
+        <!-- Logo -->
+        <ImgLogo class="absolute -bottom-[1.5rem] right-[1.2rem] w-[4rem] h-auto pb-22 "/> 
+
+    </div>
     <p class="mx-2 mb-4 p-2 pl-0 text-small">
-        <NuxtLink href="https://annebrown.ca/devy/dash">
+        <NuxtLink href="https://annebrown.ca/devy/projects/dash">
             Other Sites
         </NuxtLink>
     </p>
