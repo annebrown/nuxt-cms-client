@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
     title: 'ABOUT',
-    description: 'Technology development and documentation site',
+    description: 'Nuxt Headless CMS Client',
     order: 50,
 })
 </script>
@@ -18,7 +18,7 @@ definePageMeta({
 
     <!-- Sub-Title -->
     <p class="mb-2 mx-2 pb-0 text-sm">
-        Technology Development Platform
+        Nuxt Headless CMS Client
     </p>
 
     <div class="relative">

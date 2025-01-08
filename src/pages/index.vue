@@ -1,7 +1,7 @@
 <script lang="ts" setup>
     definePageMeta({
-        title: 'Miss Communication',
-        description: 'Development Website',
+        title: 'CMS Client',
+        description: 'Nuxt CMS Client',
     })
 </script>
 
@@ -16,7 +16,7 @@
     </template>
     
     <NuxtImg src="logo.svg" width="100" height="100" alt="logo" class="mx-auto m-0 -mt-5 p-0 pb-2"/>
-    <p class="text-center pb-8">Nuxt Headless CMS Client Demo</p>
+    <p class="text-center pb-8">CMS Client</p>
    
 
 

@@ -1,6 +1,5 @@
 <!----------------------------------@/app.vue---------------------------------->
-<template><div>
-    
+<template><div>  
 <NuxtRouteAnnouncer /><!-- Assistive Technologies --> 
 
 <!-- Center Everything -->
