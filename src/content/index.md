@@ -1,7 +1,9 @@
 ---
-title: Miss Communication
-description: Development Website
+title: Docs Project
+description: Tech Ref Docs
 toc: false
 ---
 
-<img src="logo-w-text.svg" width="100" height="100" alt="logo" class="mx-auto m-0 p-0 pb-10"/>
+## Description
+
+Root of built-in CMS, and external CMSs (remotely hosted, and locally cloned headless CMS)

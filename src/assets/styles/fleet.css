@@ -1,20 +1,10 @@
-/******************************************************************************/
-/*
-/* File: @/assets/styles/fleet-base.css
-/* 
-/* - Tailwind Defaults       
-/* - Debug
-/*
-/******************************************************************************/
-@import url("fleet-colors.css");
-@import url("fleet-fonts.css");
-@import url("fleet-code.css");
-@import url("fleet-md.css");
-/******************************************************************************/
-/*
-/* Tailwind Defaults
-/*
-/******************************************************************************/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*--------@/assets/styles/fleet.css-------------------------------------------*/
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "fleet-code.css";
+@import "fleet-links.css";
+@import "fleet-typography.css";
+@import "fleet-ui.css";
+/*--------@/assets/styles/fleet.css-------------------------------------------*/

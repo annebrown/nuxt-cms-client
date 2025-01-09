@@ -1,0 +1,35 @@
+/*---------------------------@/assets/styles/ui.css---------------------------*/
+/******************************************************************************/
+/* UI
+/******************************************************************************/
+/* Card Shadowed */
+.card-gunnel { @apply p-2; }
+/* .card-gunnel { @apply ring-gray-700 dark:ring-gray-500; } */
+
+.card-shadowed { @apply p-2
+    bg-gray-200 dark:bg-transparent
+    cursor-pointer transition ease-in-out
+    rounded-lg border border-gray-300 dark:border-gray-900
+    shadow-[2px_2px_0_0_#64748b] dark:shadow-[2px_2px_0_0_#0f172a]
+;}
+.card-shadowed-link { @apply card-shadowed
+    hover:shadow-[3px_3px_0_0_#475569] dark:hover:shadow-[3px_3px_0_0_black]
+;}
+
+/* Moved here, otherwise, card-shadowed-link is not found */
+.card-project { @apply card-shadowed-link w-fit h-60 p-2 pb-4 
+    flex flex-col gap-1;}
+/* .card-project-logo { @apply w-36 h-36 mx-auto; } */
+.card-project-deploy-type { @apply text-lg font-extrabold my-0 mx-auto py-0; }
+.card-project-title {
+    @apply text-lg font-extrabold text-center my-0 py-0 
+    text-[--primary-light] dark:text-[--primary-dark];
+}
+.card-project-descr { @apply text-current text-xs my-0 py-0; }
+.card-project-stack { @apply text-xs; }
+
+/* FrameworkCard */
+.card-framework { @apply card-shadowed-link w-fit h-60 p-2 pb-4 
+    flex flex-col gap-1;}
+.card-logo { @apply w-20 h-20 mx-auto; }
+.card-url { @apply text-lg font-extrabold my-0 mx-auto py-0; }

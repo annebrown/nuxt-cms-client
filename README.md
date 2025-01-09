@@ -1,7 +1,5 @@
 # Headless Nuxt CMS Client
 
-![Logo](/src/public/logo-w-text.svg)
-
 ## Description
 
 @[Nuxt](https://nuxt.com/)/[Content](https://content.nuxt.com/) Template - Access External, Headless CMS

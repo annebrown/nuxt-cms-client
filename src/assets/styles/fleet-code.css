@@ -1,14 +1,10 @@
+/*--------@/assets/styles/fleet-code.css--------------------------------------*/
 /******************************************************************************/
-/*
-/* File: @/assets/styles/fleet-code.css
-/*
-/* See Also:
-/* - fleet.css
-/* 
 /* Syntax Highlighting
-/*
 /******************************************************************************/
-.shiki { @apply text-xs text-wrap mb-4; }
-pre, pre code {
-    @apply bg-gray-200 dark:bg-gray-950 rounded-lg px-3 text-xs mb-8 w-fit;
-}
+.shiki { @apply w-full 
+    text-wrap text-xs rounded 
+    bg-[--body-bg-light] dark:bg-gray-900; }
+code { @apply p-1 text-xs bg-[--body-bg-light] dark:bg-gray-900; }
+pre { @apply w-full mr-4 mb-4 ml-2 px-2; }
+/*--------@/assets/styles/fleet-code.css--------------------------------------*/

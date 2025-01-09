@@ -64,7 +64,7 @@ export default defineNuxtConfig({
 
     compatibilityDate: '2024-09-28',
     
-    css: ['@/assets/styles/fleet.css'],
+    css: ['@/assets/styles/ship.css'],
 
     googleFonts: {
         download: true,

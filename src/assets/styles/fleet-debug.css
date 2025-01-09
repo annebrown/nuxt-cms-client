@@ -1,0 +1,14 @@
+/*--------@/assets/styles/fleet-debug.css-------------------------------------*/
+/******************************************************************************/
+/* Debug
+/******************************************************************************/
+/* #debug { @apply text-[--debug-light] dark:text-[debug-dark]; }
+div#debug { @apply max-w-60; }
+.debug-area { @apply max-w-fit mx-auto p-2 py-0 pb-0 mt-4 mb-0 
+    border-2 rounded-lg border-teal-400 ; }
+.debug-h3 { @apply             text-center; }
+.debug-h4 { @apply  text-xs    text-left text-teal-300; }
+.debug-p { @apply   text-xs     text-left text-white pb-1; }
+.debug-accent { @apply text-teal-300;} 
+.debug-area hr { @apply border-teal-300 h-2 w-full;} */
+/*--------@/assets/styles/fleet-debug.css-------------------------------------*/

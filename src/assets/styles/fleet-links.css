@@ -1,0 +1,17 @@
+/*--------@/assets/styles/fleet-links.css-------------------------------------*/
+/******************************************************************************/
+/* Links
+/******************************************************************************/
+/* Text Links */
+a { @apply text-[--primary-light] dark:text-[--primary-dark]; }
+a:hover, a:active, a:focus { @apply !text-current font-bold; } 
+
+h2:link:active, h3:link:active, h4:link:active, h5:link:active { @apply text-[--primary-light] dark:text-[--primary-dark]; }
+a:hover, a:active, a:focus { @apply !text-current font-bold; } 
+
+/* Image Links */
+.mode-icon svg { @apply stroke-[--primary-light] fill-none m-0 p-0; }
+.social-icon svg { @apply fill-[--primary-light] stroke-none m-0 p-0; }
+.mode-icon svg:hover { @apply stroke-current fill-none m-0 p-0; }
+.social-icon svg:hover { @apply fill-current stroke-none m-0 p-0; }
+/*--------@/assets/styles/fleet-links.css-------------------------------------*/
