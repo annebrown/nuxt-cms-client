@@ -5,7 +5,7 @@
     <NuxtLink href="/" class="pr-2 align-bottom">
         Home
     </NuxtLink>
-    <NuxtLink href="/public" class="no-flex pr-2 align-bottom">
+    <NuxtLink href="/docs-pub" class="no-flex pr-2 align-bottom">
         Docs
     </NuxtLink>
     <NuxtLink href="/about" class="align-bottom">

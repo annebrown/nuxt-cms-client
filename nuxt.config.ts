@@ -6,6 +6,12 @@ export default defineNuxtConfig({
 
     devtools: { enabled: true },
   
+    app: {
+        head: {
+            link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        }
+    },
+
     modules: [
         '@nuxt/ui',
         '@nuxt/content', 
@@ -25,42 +31,56 @@ export default defineNuxtConfig({
     content: {
 
         documentDriven: true,
+
         // Ignore "Number Dot" ordering in /content
         ignores: ['^\\.', '^-', '^[0-5]\\d*\\.'],
         
         highlight: {
+
             theme: {
-              default: 'github-light',
-              dark: 'github-dark',
+                dark: 'github-dark',
+                default: 'github-dark',
+                light: 'github-light',
             },
-            langs: ['regexp', 'json', 'js', 'ts', 'tsx', 'html', 
-                'css', 'vue','shell' , 'mdc', 'yaml', 'md', 
-                'console', 'ini', 'java', 'diff' 
+            langs: ['regexp', 'perl', 'json', 'js', 'ts', 'tsx', 'html', 'css', 
+                'vue','shell' , 'mdc', 'yaml', 'md', 'console', 'ini', 'java', 
+                'diff', 'log', 'mermaid'
             ],
-        },
+        }, // highlight
         
         sources: {
-            github: {
-              prefix: '/public', // Prefix for routes
+            github: { // GitHub Public Repo
+              prefix: '/docs-pub', // Route Prefix
               driver: 'github',
               repo: "annebrown/content-base",
               branch: "main",
               dir: "content", 
             },
-            local: {
-                prefix: '/local', // Prefix for routes
+            localDocsPub: {
+                prefix: '/local-docs-pub', // Route Prefix
                 driver: 'fs',
-                base: resolve(__dirname, '/home/anne/prod/content-data/content-data/content'),
+                base: resolve(__dirname, '/home/anne/devy/prod/content-data/content-data/content'),
             },
-        }
-    }, // Content
+            localDocsPriv: {
+                prefix: '/docs-priv', // Route Prefix
+                driver: 'fs',
+                base: resolve(__dirname, '/home/anne/devy/proj/docs-priv/docs-priv/content'),
+            },
+            // backups: {
+            //     prefix: '/local-backups',
+            //     driver: 'fs',
+            //     base: resolve(__dirname, '~/prod/content-data/backups'),
+            // },
+        }, // sources
 
-    nitro: {
-        prerender: {
-            crawlLinks: true,
-            failOnError: false,
+        // Use Cache 4 Dev Server
+        // - unless XXserver launched w alias (XXservernocache)
+        // - Faster DX for CMS client dev
+        watch: process.env.DISABLE_CONTENT_WATCH === 'true' ? false : {
+            ws: { port: 2221, } // WebSocket server
         },
-    },
+
+    }, // Content
 
     compatibilityDate: '2024-09-28',
     
